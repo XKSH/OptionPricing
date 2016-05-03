@@ -14,10 +14,10 @@ double Gauss( ) {
 
 void BSModel::GenerateSamplePath(double T, int m, SamplePath& S) {
 
-    double St = S0;
+  double St = S0;
 
-    for(int k = 0; k < m; k++) {
-      S[k] = St*exp((r - sigma*sigma*0.5)*(T/m) + sigma*sqrt(T/m)*Gauss());
-      St = S[k];
-    }
+  for(int k = 0; k < m; k++) {
+    S[k] = St*exp((r - sigma*sigma*0.5)*(T/m) + sigma*sqrt(T/m)*Gauss());
+    St = S[k];
+  }
 }
