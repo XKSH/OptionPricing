@@ -1,6 +1,6 @@
 #include <cmath>
 
-#include "Option.h"
+#include "Options.h"
 
 double Put::Payoff(double z) {
 

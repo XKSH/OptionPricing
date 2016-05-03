@@ -1,6 +1,9 @@
 #ifndef BSModel01_h
 #define BSModel01_h
 
+#include <cstdlib>
+#include <ctime>
+
 #include <vector>
 
 using namespace std;

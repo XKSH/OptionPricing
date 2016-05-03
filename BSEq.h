@@ -2,7 +2,7 @@
 #define BSEq_h
 
 #include "BSModel01.h"
-#include "Option.h"
+#include "Options.h"
 #include "ParabPDE.h"
 
 class BSEq: public ParabPDE {
