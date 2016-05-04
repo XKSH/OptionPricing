@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classParabPDE" kind="class" prot="public" abstract="yes">
+    <compoundname>ParabPDE</compoundname>
+    <derivedcompoundref refid="classBSEq" prot="public" virt="non-virtual">BSEq</derivedcompoundref>
+    <includes refid="ParabPDE_8h" local="no">ParabPDE.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParabPDE::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="37" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod::FDMethod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParabPDE::xl</definition>
+        <argsstring></argsstring>
+        <name>xl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="38" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod::FDMethod</referencedby>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">FDMethod::v</referencedby>
+        <referencedby refid="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" compoundref="FDMethod_8h" startline="26" endline="28">FDMethod::x</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParabPDE::xu</definition>
+        <argsstring></argsstring>
+        <name>xu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="39" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod::FDMethod</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classParabPDE_1a809e251d53ff62714bc8a30e45cc88a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::a</definition>
+        <argsstring>(double t, double x)=0</argsstring>
+        <name>a</name>
+        <reimplementedby refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c">a</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="41" column="1"/>
+        <referencedby refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" compoundref="FDMethod_8h" startline="29" endline="31">FDMethod::a</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1ab98c81bf66471fa6f67dc17b9123bda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::b</definition>
+        <argsstring>(double t, double x)=0</argsstring>
+        <name>b</name>
+        <reimplementedby refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672">b</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="42" column="1"/>
+        <referencedby refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" compoundref="FDMethod_8h" startline="32" endline="34">FDMethod::b</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1aebec9339309e456136ecd0c3b4a74bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::c</definition>
+        <argsstring>(double t, double x)=0</argsstring>
+        <name>c</name>
+        <reimplementedby refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba">c</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="43" column="1"/>
+        <referencedby refid="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" compoundref="FDMethod_8h" startline="35" endline="37">FDMethod::c</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1a13531e677a97660f56f88fc8a9f2c593" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::d</definition>
+        <argsstring>(double t, double x)=0</argsstring>
+        <name>d</name>
+        <reimplementedby refid="classBSEq_1ae01526739bc51e813dfdb880585aefc0">d</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="44" column="1"/>
+        <referencedby refid="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" compoundref="FDMethod_8h" startline="38" endline="40">FDMethod::d</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1a099b6ba266fb033de9901a60dc935ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::f</definition>
+        <argsstring>(double x)=0</argsstring>
+        <name>f</name>
+        <reimplementedby refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519">f</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="46" column="1"/>
+        <referencedby refid="classFDMethod_1a02f9d3f5c3466f04323bb966b346efae" compoundref="FDMethod_8h" startline="41" endline="43">FDMethod::f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1a8a1850597550bf8aab3b5dca2aed6ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::fu</definition>
+        <argsstring>(double t)=0</argsstring>
+        <name>fu</name>
+        <reimplementedby refid="classBSEq_1acebc22c41d04659861ef346d988de565">fu</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="47" column="1"/>
+        <referencedby refid="classFDMethod_1ae282bd4b389fdce1badb5ecaa3c3e8e5" compoundref="FDMethod_8h" startline="44" endline="46">FDMethod::fu</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classParabPDE_1aa083d2745f44daba57ad296749eb7ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double ParabPDE::fl</definition>
+        <argsstring>(double t)=0</argsstring>
+        <name>fl</name>
+        <reimplementedby refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717">fl</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="48" column="1"/>
+        <referencedby refid="classFDMethod_1add9102baa92871331350bf5d86c12f1a" compoundref="FDMethod_8h" startline="47" endline="49">FDMethod::fl</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="60">
+        <label>BSEq</label>
+        <link refid="classBSEq"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" line="34" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h" bodystart="34" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classParabPDE_1a809e251d53ff62714bc8a30e45cc88a5" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>a</name></member>
+      <member refid="classParabPDE_1ab98c81bf66471fa6f67dc17b9123bda6" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>b</name></member>
+      <member refid="classParabPDE_1aebec9339309e456136ecd0c3b4a74bb0" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>c</name></member>
+      <member refid="classParabPDE_1a13531e677a97660f56f88fc8a9f2c593" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>d</name></member>
+      <member refid="classParabPDE_1a099b6ba266fb033de9901a60dc935ddf" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>f</name></member>
+      <member refid="classParabPDE_1aa083d2745f44daba57ad296749eb7ec0" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>fl</name></member>
+      <member refid="classParabPDE_1a8a1850597550bf8aab3b5dca2aed6ff8" prot="public" virt="pure-virtual"><scope>ParabPDE</scope><name>fu</name></member>
+      <member refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" prot="public" virt="non-virtual"><scope>ParabPDE</scope><name>T</name></member>
+      <member refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" prot="public" virt="non-virtual"><scope>ParabPDE</scope><name>xl</name></member>
+      <member refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" prot="public" virt="non-virtual"><scope>ParabPDE</scope><name>xu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

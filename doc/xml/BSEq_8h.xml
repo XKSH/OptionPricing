@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="BSEq_8h" kind="file">
+    <compoundname>BSEq.h</compoundname>
+    <includes refid="BSModel01_8h" local="yes">BSModel01.h</includes>
+    <includes refid="Options_8h" local="yes">Options.h</includes>
+    <includes refid="ParabPDE_8h" local="yes">ParabPDE.h</includes>
+    <includedby refid="BSEq_8cpp" local="yes">BSEq.cpp</includedby>
+    <includedby refid="Main24_8cpp" local="yes">Main24.cpp</includedby>
+    <incdepgraph>
+      <node id="121">
+        <label>ParabPDE.h</label>
+        <link refid="ParabPDE_8h"/>
+      </node>
+      <node id="120">
+        <label>Options.h</label>
+        <link refid="Options_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>BSEq.h</label>
+        <link refid="BSEq.h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>ctime</label>
+      </node>
+      <node id="119">
+        <label>vector</label>
+      </node>
+      <node id="117">
+        <label>cstdlib</label>
+      </node>
+      <node id="116">
+        <label>BSModel01.h</label>
+        <link refid="BSModel01_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="124">
+        <label>Main24.cpp</label>
+        <link refid="Main24_8cpp"/>
+      </node>
+      <node id="122">
+        <label>BSEq.h</label>
+        <link refid="BSEq.h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>BSEq.cpp</label>
+        <link refid="BSEq_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBSEq" prot="public">BSEq</innerclass>
+    <briefdescription>
+<para>Defines a class representing the Black<ndash/>Scholes equation. </para>    </briefdescription>
+    <detaileddescription>
+<para>A typical reason for studying parabolic partial differential equations in finance is the Black–-Scholes equation.</para><para>Let <formula id="3">$ S(t) $</formula> denote the price at time <formula id="4">$ t $</formula> of the underlying asset under the Black–-Scholes equation. Suppose that at time <formula id="4">$ t $</formula> the price of a financial derivative <formula id="5">$ H(t) $</formula> can be expressed using a function <formula id="6">$ u $</formula>, defined as: <formula id="7">\[ H(t) = u(t, S (t)). \]</formula> If <formula id="6">$ u $</formula> is a <formula id="8">$ C^{1,2} $</formula> function on <formula id="9">$ [0,T)\times \mathbb{R} $</formula>, then the Black<ndash/>Scholes equation can be used to solve for <formula id="6">$ u $</formula>.</para><para>When <formula id="10">$ u(t, S(t)) $</formula> is the value of an option with expiry date <formula id="11">$ T $</formula> and payoff <formula id="12">$ H(T) = h(S(T)) $</formula>, then <formula id="13">$ u(T, S(T)) = h(S(T)) $</formula>, hence the terminal condition is <formula id="14">\[ u(T, z) = h(z). \]</formula> The lower and upper boundary conditions depend on the type of the option we wish to price. They can usually be derived from heuristic or arbitrage arguments.</para><para>For example, for a <bold>put option</bold> with expiry date <formula id="11">$ T $</formula> and strike price <formula id="15">$ K $</formula>, if <formula id="3">$ S(t) $</formula> is high, then the option is practically worthless since it is unlikely to be exercised. This means that we can consider a sufficiently large <formula id="16">$ z_u $</formula> and set: <formula id="17">\[ u(t, zu) = h^{put}_u(t) = 0. \]</formula> Also, if <formula id="3">$ S(t) $</formula> is close to zero, then we can assume that we are almost certain to exercise the put at expiry and obtain a payoff close to <formula id="15">$ K $</formula>. Considering a sufficiently small positive <formula id="18">$ z_l $</formula> we can therefore set: <formula id="19">\[ u(t, zl) = h^{put}_l(t) = exp(-r(T - t))K. \]</formula></para><para><simplesect kind="warning"><para>This code is also listed and fully explained in the book **Numerical Methods in Finance with C++** by Maciej Capiński and Tomasz Zastawniak, published in September 2012.</para></simplesect>
+<simplesect kind="author"><para>: Eduardo J. Sanchez (ejspeiro) - ejspeiro at gmail dot com </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#ifndef<sp/>BSEq_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSEq_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BSModel01_8h" kindref="compound">BSModel01.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Options_8h" kindref="compound">Options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ParabPDE_8h" kindref="compound">ParabPDE.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classBSEq" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBSEq" kindref="compound">BSEq</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classParabPDE" kindref="compound">ParabPDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBSModel" kindref="compound">BSModel</ref><sp/>*<ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOption" kindref="compound">Option</ref><sp/>*<ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" kindref="member">BSEq</ref>(<ref refid="classBSModel" kindref="compound">BSModel</ref>*<sp/>PtrModel_,<sp/><ref refid="classOption" kindref="compound">Option</ref>*<sp/>PtrOption_);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" kindref="member">a</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" kindref="member">b</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" kindref="member">c</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1ae01526739bc51e813dfdb880585aefc0" kindref="member">d</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" kindref="member">f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" kindref="member">fl</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1acebc22c41d04659861ef346d988de565" kindref="member">fu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h"/>
+  </compounddef>
+</doxygen>

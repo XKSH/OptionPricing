@@ -1,0 +1,77 @@
+\hypertarget{BSModel01_8cpp}{\section{B\+S\+Model01.\+cpp File Reference}
+\label{BSModel01_8cpp}\index{B\+S\+Model01.\+cpp@{B\+S\+Model01.\+cpp}}
+}
+
+
+Implementation of a class using the Box--Muller method for sample paths.  
+
+
+{\ttfamily \#include \char`\"{}B\+S\+Model01.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+Include dependency graph for B\+S\+Model01.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{BSModel01_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}{Gauss} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}{pi} = 4.\+0$\ast$atan(1.\+0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+We start by showing how to generate samples of random variables with standard normal distribution. In C++ we have at our disposal a function rand(), which generates integer numbers, simulating a sequence of i.\+i.\+d. random variables, uniformly distributed within the range from 0 to R\+A\+N\+D\+\_\+\+M\+A\+X. We can use the Box–\+Muller method to produce the following recipe for generating sample paths.
+
+\begin{DoxyWarning}{Warning}
+This code is also listed and fully explained in the book $\ast$$\ast$\+Numerical Methods in Finance with C++$\ast$$\ast$ by Maciej Capiński and Tomasz Zastawniak, published in September 2012.
+\end{DoxyWarning}
+\begin{DoxyAuthor}{Author}
+\+: Eduardo J. Sanchez (ejspeiro) -\/ ejspeiro at gmail dot com 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{BSModel01_8cpp_source}{B\+S\+Model01.\+cpp}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}{\index{B\+S\+Model01.\+cpp@{B\+S\+Model01.\+cpp}!Gauss@{Gauss}}
+\index{Gauss@{Gauss}!B\+S\+Model01.\+cpp@{B\+S\+Model01.\+cpp}}
+\subsubsection[{Gauss}]{\setlength{\rightskip}{0pt plus 5cm}double Gauss (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}
+
+
+Definition at line \hyperlink{BSModel01_8cpp_source_l00025}{25} of file \hyperlink{BSModel01_8cpp_source}{B\+S\+Model01.\+cpp}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}{\index{B\+S\+Model01.\+cpp@{B\+S\+Model01.\+cpp}!pi@{pi}}
+\index{pi@{pi}!B\+S\+Model01.\+cpp@{B\+S\+Model01.\+cpp}}
+\subsubsection[{pi}]{\setlength{\rightskip}{0pt plus 5cm}const double pi = 4.\+0$\ast$atan(1.\+0)}}\label{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}
+
+
+Definition at line \hyperlink{BSModel01_8cpp_source_l00023}{23} of file \hyperlink{BSModel01_8cpp_source}{B\+S\+Model01.\+cpp}.
+

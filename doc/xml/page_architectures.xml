@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="page_architectures" kind="page">
+    <compoundname>page_architectures</compoundname>
+    <title>Tested Architectures</title>
+    <detaileddescription>
+<para>The following architectures have provided a correct execution of this code:</para><para><verbatim>1. Intel(R) Core(TM) i7-4600U CPU 2.10 GHz 4096 KB of cache and a stepping of 1.
+   Linux 3.16.7-29-desktop #1 SMP PREEMPT (6be6a97) x86_64 GNU/Linux
+   openSUSE 13.2 (Harlequin) (x86_64)
+   gcc (SUSE Linux) 4.8.3 20140627 [gcc-4_8-branch revision 212064]
+</verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

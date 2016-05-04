@@ -1,0 +1,152 @@
+.TH "FDMethod" 3 "Wed May 4 2016" "Option Pricing Example" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FDMethod \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FDMethod\&.h>\fP
+.PP
+Inherited by \fBExplicitMethod\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFDMethod\fP (\fBParabPDE\fP *PtrPDE_, int imax_, int jmax_)"
+.br
+.ti -1c
+.RI "double \fBt\fP (double i)"
+.br
+.ti -1c
+.RI "double \fBx\fP (int j)"
+.br
+.ti -1c
+.RI "double \fBa\fP (double i, int j)"
+.br
+.ti -1c
+.RI "double \fBb\fP (double i, int j)"
+.br
+.ti -1c
+.RI "double \fBc\fP (double i, int j)"
+.br
+.ti -1c
+.RI "double \fBd\fP (double i, int j)"
+.br
+.ti -1c
+.RI "double \fBf\fP (int j)"
+.br
+.ti -1c
+.RI "double \fBfu\fP (int i)"
+.br
+.ti -1c
+.RI "double \fBfl\fP (int i)"
+.br
+.ti -1c
+.RI "double \fBv\fP (double \fBt\fP, double \fBx\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBParabPDE\fP * \fBPtrPDE\fP"
+.br
+.ti -1c
+.RI "int \fBimax\fP"
+.br
+.ti -1c
+.RI "int \fBjmax\fP"
+.br
+.ti -1c
+.RI "double \fBdx\fP"
+.br
+.ti -1c
+.RI "double \fBdt\fP"
+.br
+.ti -1c
+.RI "vector< \fBVector\fP > \fBV\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 12 of file FDMethod\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "FDMethod::FDMethod (\fBParabPDE\fP *PtrPDE_, intimax_, intjmax_)"
+
+.PP
+Definition at line 3 of file FDMethod\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double FDMethod::a (doublei, intj)\fC [inline]\fP"
+
+.PP
+Definition at line 29 of file FDMethod\&.h\&.
+.SS "double FDMethod::b (doublei, intj)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file FDMethod\&.h\&.
+.SS "double FDMethod::c (doublei, intj)\fC [inline]\fP"
+
+.PP
+Definition at line 35 of file FDMethod\&.h\&.
+.SS "double FDMethod::d (doublei, intj)\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file FDMethod\&.h\&.
+.SS "double FDMethod::f (intj)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file FDMethod\&.h\&.
+.SS "double FDMethod::fl (inti)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file FDMethod\&.h\&.
+.SS "double FDMethod::fu (inti)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file FDMethod\&.h\&.
+.SS "double FDMethod::t (doublei)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file FDMethod\&.h\&.
+.SS "double FDMethod::v (doublet, doublex)"
+
+.PP
+Definition at line 17 of file FDMethod\&.cpp\&.
+.SS "double FDMethod::x (intj)\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file FDMethod\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double FDMethod::dt"
+
+.PP
+Definition at line 18 of file FDMethod\&.h\&.
+.SS "double FDMethod::dx"
+
+.PP
+Definition at line 17 of file FDMethod\&.h\&.
+.SS "int FDMethod::imax"
+
+.PP
+Definition at line 15 of file FDMethod\&.h\&.
+.SS "int FDMethod::jmax"
+
+.PP
+Definition at line 16 of file FDMethod\&.h\&.
+.SS "\fBParabPDE\fP* FDMethod::PtrPDE"
+
+.PP
+Definition at line 14 of file FDMethod\&.h\&.
+.SS "vector<\fBVector\fP> FDMethod::V"
+
+.PP
+Definition at line 19 of file FDMethod\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Option Pricing Example from the source code\&.

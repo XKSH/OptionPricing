@@ -1,0 +1,73 @@
+.TH "Option" 3 "Wed May 4 2016" "Option Pricing Example" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Option \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Options\&.h>\fP
+.PP
+Inherited by \fBPut\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual double \fBPayoff\fP (double z)=0"
+.br
+.ti -1c
+.RI "virtual double \fBUpperBdCond\fP (\fBBSModel\fP *PtrModel, double t)=0"
+.br
+.ti -1c
+.RI "virtual double \fBLowerBdCond\fP (\fBBSModel\fP *PtrModel, double t)=0"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBT\fP"
+.br
+.ti -1c
+.RI "double \fBzl\fP"
+.br
+.ti -1c
+.RI "double \fBzu\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file Options\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual double Option::LowerBdCond (\fBBSModel\fP *PtrModel, doublet)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBPut\fP\&.
+.SS "virtual double Option::Payoff (doublez)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBPut\fP\&.
+.SS "virtual double Option::UpperBdCond (\fBBSModel\fP *PtrModel, doublet)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBPut\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Option::T"
+
+.PP
+Definition at line 25 of file Options\&.h\&.
+.SS "double Option::zl"
+
+.PP
+Definition at line 26 of file Options\&.h\&.
+.SS "double Option::zu"
+
+.PP
+Definition at line 27 of file Options\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Option Pricing Example from the source code\&.

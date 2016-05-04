@@ -1,0 +1,60 @@
+\hypertarget{BSModel01_8h}{\section{B\+S\+Model01.\+h File Reference}
+\label{BSModel01_8h}\index{B\+S\+Model01.\+h@{B\+S\+Model01.\+h}}
+}
+
+
+Definition of a class using the Box--Muller method for sample paths.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for B\+S\+Model01.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{BSModel01_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BSModel01_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBSModel}{B\+S\+Model}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ double $>$ \hyperlink{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{Sample\+Path}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+We start by showing how to generate samples of random variables with standard normal distribution. In C++ we have at our disposal a function rand(), which generates integer numbers, simulating a sequence of i.\+i.\+d. random variables, uniformly distributed within the range from 0 to R\+A\+N\+D\+\_\+\+M\+A\+X. We can use the Box–\+Muller method to produce the following recipe for generating sample paths.
+
+\begin{DoxyWarning}{Warning}
+This code is also listed and fully explained in the book $\ast$$\ast$\+Numerical Methods in Finance with C++$\ast$$\ast$ by Maciej Capiński and Tomasz Zastawniak, published in September 2012.
+\end{DoxyWarning}
+\begin{DoxyAuthor}{Author}
+\+: Eduardo J. Sanchez (ejspeiro) -\/ ejspeiro at gmail dot com 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{BSModel01_8h_source}{B\+S\+Model01.\+h}.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{\index{B\+S\+Model01.\+h@{B\+S\+Model01.\+h}!Sample\+Path@{Sample\+Path}}
+\index{Sample\+Path@{Sample\+Path}!B\+S\+Model01.\+h@{B\+S\+Model01.\+h}}
+\subsubsection[{Sample\+Path}]{\setlength{\rightskip}{0pt plus 5cm}typedef vector$<$double$>$ {\bf Sample\+Path}}}\label{BSModel01_8h_afbb1a5715857075c187084894fc00d31}
+
+
+Definition at line \hyperlink{BSModel01_8h_source_l00029}{29} of file \hyperlink{BSModel01_8h_source}{B\+S\+Model01.\+h}.
+

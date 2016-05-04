@@ -1,0 +1,27 @@
+\hypertarget{ParabPDE_8h_source}{\section{Parab\+P\+D\+E.\+h}
+}
+
+\begin{DoxyCode}
+00001 
+00031 \textcolor{preprocessor}{#ifndef ParabPDE\_h}
+00032 \textcolor{preprocessor}{#define ParabPDE\_h}
+00033 
+\hypertarget{ParabPDE_8h_source_l00034}{}\hyperlink{classParabPDE}{00034} \textcolor{keyword}{class }\hyperlink{classParabPDE}{ParabPDE} \{
+00035 
+00036   \textcolor{keyword}{public}:
+\hypertarget{ParabPDE_8h_source_l00037}{}\hyperlink{classParabPDE_accce3d4cc39e47137915a47b4edd838e}{00037}     \textcolor{keywordtype}{double} \hyperlink{classParabPDE_accce3d4cc39e47137915a47b4edd838e}{T};
+\hypertarget{ParabPDE_8h_source_l00038}{}\hyperlink{classParabPDE_aa75c941c87400c92781c74e1e4f5ae5e}{00038}     \textcolor{keywordtype}{double} \hyperlink{classParabPDE_aa75c941c87400c92781c74e1e4f5ae5e}{xl};
+\hypertarget{ParabPDE_8h_source_l00039}{}\hyperlink{classParabPDE_a5e4f6911cba231072c0ed4b6b4462b8a}{00039}     \textcolor{keywordtype}{double} \hyperlink{classParabPDE_a5e4f6911cba231072c0ed4b6b4462b8a}{xu};
+00040 
+00041     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_a809e251d53ff62714bc8a30e45cc88a5}{a}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} x) = 0;
+00042     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_ab98c81bf66471fa6f67dc17b9123bda6}{b}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} x) = 0;
+00043     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_aebec9339309e456136ecd0c3b4a74bb0}{c}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} x) = 0;
+00044     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_a13531e677a97660f56f88fc8a9f2c593}{d}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} x) = 0;
+00045 
+00046     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_a099b6ba266fb033de9901a60dc935ddf}{f}(\textcolor{keywordtype}{double} x) = 0;
+00047     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_a8a1850597550bf8aab3b5dca2aed6ff8}{fu}(\textcolor{keywordtype}{double} t) = 0;
+00048     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classParabPDE_aa083d2745f44daba57ad296749eb7ec0}{fl}(\textcolor{keywordtype}{double} t) = 0;
+00049 \};
+00050 
+00051 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="ParabPDE.h" name="ParabPDE.h">
+<area shape="rect" id="node2" href="$BSEq_8h.html" title="Defines a class representing the Black–Scholes equation. " alt="" coords="89,80,157,107"/>
+<area shape="rect" id="node5" href="$FDMethod_8h.html" title="FDMethod.h" alt="" coords="181,80,280,107"/>
+<area shape="rect" id="node3" href="$BSEq_8cpp.html" title="implements a class representing the Black–Scholes equation. " alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$Main24_8cpp.html" title="Test the option pricing code based on the Black–Scholes model. " alt="" coords="78,229,173,256"/>
+<area shape="rect" id="node6" href="$ExplicitMethod_8h.html" title="ExplicitMethod.h" alt="" coords="166,155,293,181"/>
+<area shape="rect" id="node8" href="$FDMethod_8cpp.html" title="FDMethod.cpp" alt="" coords="317,155,432,181"/>
+<area shape="rect" id="node7" href="$ExplicitMethod_8cpp.html" title="ExplicitMethod.cpp" alt="" coords="197,229,339,256"/>
+</map>

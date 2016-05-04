@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="README_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>OptionPricing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>repository<sp/>contains<sp/>object-oriented<sp/>code<sp/>implementing<sp/>numerical<sp/>methods<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">option<sp/>pricing.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>code<sp/>is<sp/>also<sp/>listed<sp/>and<sp/>fully<sp/>explained<sp/>in<sp/>the<sp/>book<sp/>**Numerical<sp/>Methods<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">Finance<sp/>with<sp/>C++**<sp/>by<sp/>Maciej<sp/>Capiński<sp/>and<sp/>Tomasz<sp/>Zastawniak,<sp/>published<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">September<sp/>2012.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>code<sp/>is<sp/>a<sp/>minimally-complete<sp/>example<sp/>intended<sp/>for<sp/>research<sp/>and<sp/>modeling.</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>not<sp/>intended<sp/>to<sp/>be<sp/>production<sp/>code.</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/README.md"/>
+  </compounddef>
+</doxygen>

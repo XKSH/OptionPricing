@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classBSModel" kind="class" prot="public">
+    <compoundname>BSModel</compoundname>
+    <includes refid="BSModel01_8h" local="no">BSModel01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classBSModel_1a2b37a14d9aaab033d676dd16381f7f19" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double BSModel::S0</definition>
+        <argsstring></argsstring>
+        <name>S0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="33" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classBSModel_1aad0f0d6d1b9df4d76d03bd0b477e1347" compoundref="BSModel01_8cpp" startline="33" endline="41">GenerateSamplePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classBSModel_1add3230c0df8e47623116b439598c0de3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double BSModel::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="34" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" compoundref="BSEq_8cpp" startline="68" endline="71">BSEq::b</referencedby>
+        <referencedby refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" compoundref="BSEq_8cpp" startline="73" endline="76">BSEq::c</referencedby>
+        <referencedby refid="classBSModel_1aad0f0d6d1b9df4d76d03bd0b477e1347" compoundref="BSModel01_8cpp" startline="33" endline="41">GenerateSamplePath</referencedby>
+        <referencedby refid="classPut_1ab07d0f1d939f267861484f645d71c9c5" compoundref="Options_8cpp" startline="35" endline="38">Put::LowerBdCond</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classBSModel_1a1267641043c16cd9baf2eb242320f0d3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double BSModel::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="35" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" compoundref="BSEq_8cpp" startline="63" endline="66">BSEq::a</referencedby>
+        <referencedby refid="classBSModel_1aad0f0d6d1b9df4d76d03bd0b477e1347" compoundref="BSModel01_8cpp" startline="33" endline="41">GenerateSamplePath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBSModel_1a309dd895251cfd050b2d50a30abfc5fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BSModel::BSModel</definition>
+        <argsstring>(double S0_, double r_, double sigma_)</argsstring>
+        <name>BSModel</name>
+        <param>
+          <type>double</type>
+          <declname>S0_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="37" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classBSModel_1aad0f0d6d1b9df4d76d03bd0b477e1347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSModel::GenerateSamplePath</definition>
+        <argsstring>(double T, int m, SamplePath &amp;S)</argsstring>
+        <name>GenerateSamplePath</name>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="BSModel01_8h_1afbb1a5715857075c187084894fc00d31" kindref="member">SamplePath</ref> &amp;</type>
+          <declname>S</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="45" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.cpp" bodystart="33" bodyend="41"/>
+        <references refid="classBSModel_1a2b37a14d9aaab033d676dd16381f7f19" compoundref="BSModel01_8h" startline="33">S0</references>
+        <references refid="classBSModel_1add3230c0df8e47623116b439598c0de3" compoundref="BSModel01_8h" startline="34">r</references>
+        <references refid="classBSModel_1a1267641043c16cd9baf2eb242320f0d3" compoundref="BSModel01_8h" startline="35">sigma</references>
+        <references refid="BSModel01_8cpp_1aa5430ef684e160310d140e8914e32218" compoundref="BSModel01_8cpp" startline="25" endline="31">Gauss</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>BSModel</label>
+        <link refid="classBSModel"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" line="31" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSModel01.h" bodystart="31" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classBSModel_1a309dd895251cfd050b2d50a30abfc5fb" prot="public" virt="non-virtual"><scope>BSModel</scope><name>BSModel</name></member>
+      <member refid="classBSModel_1aad0f0d6d1b9df4d76d03bd0b477e1347" prot="public" virt="non-virtual"><scope>BSModel</scope><name>GenerateSamplePath</name></member>
+      <member refid="classBSModel_1add3230c0df8e47623116b439598c0de3" prot="public" virt="non-virtual"><scope>BSModel</scope><name>r</name></member>
+      <member refid="classBSModel_1a2b37a14d9aaab033d676dd16381f7f19" prot="public" virt="non-virtual"><scope>BSModel</scope><name>S0</name></member>
+      <member refid="classBSModel_1a1267641043c16cd9baf2eb242320f0d3" prot="public" virt="non-virtual"><scope>BSModel</scope><name>sigma</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

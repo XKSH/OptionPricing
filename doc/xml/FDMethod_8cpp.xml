@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="FDMethod_8cpp" kind="file">
+    <compoundname>FDMethod.cpp</compoundname>
+    <includes refid="FDMethod_8h" local="yes">FDMethod.h</includes>
+    <incdepgraph>
+      <node id="156">
+        <label>FDMethod.cpp</label>
+        <link refid="FDMethod.cpp"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>ParabPDE.h</label>
+        <link refid="ParabPDE_8h"/>
+      </node>
+      <node id="157">
+        <label>FDMethod.h</label>
+        <link refid="FDMethod_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FDMethod_8h" kindref="compound">FDMethod.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" refkind="member"><highlight class="normal"><ref refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" kindref="member">FDMethod::FDMethod</ref>(<ref refid="classParabPDE" kindref="compound">ParabPDE</ref>*<sp/>PtrPDE_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jmax_)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" kindref="member">PtrPDE</ref><sp/>=<sp/>PtrPDE_;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" kindref="member">imax</ref><sp/>=<sp/>imax_;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" kindref="member">jmax</ref><sp/>=<sp/>jmax_;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref><sp/>=<sp/>(<ref refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" kindref="member">PtrPDE</ref>-&gt;<ref refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" kindref="member">xu</ref><sp/>-<sp/><ref refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" kindref="member">PtrPDE</ref>-&gt;<ref refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" kindref="member">xl</ref>)/<ref refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" kindref="member">jmax</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref><sp/>=<sp/><ref refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" kindref="member">PtrPDE</ref>-&gt;<ref refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" kindref="member">T</ref>/<ref refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" kindref="member">imax</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>.resize(<ref refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" kindref="member">imax</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/><ref refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" kindref="member">imax</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>[i].resize(<ref refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" kindref="member">jmax</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" kindref="member">FDMethod::v</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>(int)(t/<ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>(int)((x<sp/>-<sp/><ref refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" kindref="member">PtrPDE</ref>-&gt;<ref refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" kindref="member">xl</ref>)/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l1<sp/>=<sp/>(t<sp/>-<sp/><ref refid="classFDMethod_1a9aaf3e419045497b888808537fef2b19" kindref="member">FDMethod::t</ref>(i))/<ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l0<sp/>=<sp/>1.0<sp/>-<sp/>l1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w1<sp/>=<sp/>(x<sp/>-<sp/><ref refid="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" kindref="member">FDMethod::x</ref>(j))/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w0<sp/>=<sp/>1.0<sp/>-<sp/>w1;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l1*w1*<ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>[i<sp/>+<sp/>1][j<sp/>+<sp/>1]<sp/>+<sp/>l1*w0*<ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>[i<sp/>+<sp/>1][j]<sp/>+</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l0*w1*<ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>[i][j<sp/>+<sp/>1]<sp/>+<sp/>l0*w0*<ref refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" kindref="member">V</ref>[i][j];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.cpp"/>
+  </compounddef>
+</doxygen>

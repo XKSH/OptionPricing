@@ -1,0 +1,5 @@
+<map id="ExplicitMethod" name="ExplicitMethod">
+<area shape="rect" id="node2" href="$classFDMethod.html" title="{FDMethod\n|+ imax\l+ jmax\l+ dx\l+ dt\l|+ FDMethod()\l+ t()\l+ x()\l+ a()\l+ b()\l+ c()\l+ d()\l+ f()\l+ fu()\l+ fl()\l+ v()\l}" alt="" coords="50,543,162,811"/>
+<area shape="rect" id="node3" href="$classParabPDE.html" title="{ParabPDE\n|+ T\l+ xl\l+ xu\l|+ a()\l+ b()\l+ c()\l+ d()\l+ f()\l+ fu()\l+ fl()\l}" alt="" coords="5,285,89,480"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="131,145,257,223"/>
+</map>

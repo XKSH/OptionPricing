@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classOption" kind="class" prot="public" abstract="yes">
+    <compoundname>Option</compoundname>
+    <derivedcompoundref refid="classPut" prot="public" virt="non-virtual">Put</derivedcompoundref>
+    <includes refid="Options_8h" local="no">Options.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOption_1ae583dd6d430a3b428014efa942605d54" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Option::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="25" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/Options.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classPut_1ab07d0f1d939f267861484f645d71c9c5" compoundref="Options_8cpp" startline="35" endline="38">Put::LowerBdCond</referencedby>
+        <referencedby refid="classPut_1a8a846b5650bb0d677c251a114c8d32e0" compoundref="Options_8h" startline="38" endline="43">Put::Put</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1a37c65100e75876d4f4b76e8647c6702d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Option::zl</definition>
+        <argsstring></argsstring>
+        <name>zl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="26" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/Options.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classPut_1a8a846b5650bb0d677c251a114c8d32e0" compoundref="Options_8h" startline="38" endline="43">Put::Put</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classOption_1aa80c6f304df39def3df2bf26afbbfe79" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Option::zu</definition>
+        <argsstring></argsstring>
+        <name>zu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="27" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/Options.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq::BSEq</referencedby>
+        <referencedby refid="classPut_1a8a846b5650bb0d677c251a114c8d32e0" compoundref="Options_8h" startline="38" endline="43">Put::Put</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOption_1a10f2917f21055a1beb890353e53e0865" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double Option::Payoff</definition>
+        <argsstring>(double z)=0</argsstring>
+        <name>Payoff</name>
+        <reimplementedby refid="classPut_1ae2bbadeb2c9f05644ef9b9af97ad7520">Payoff</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="29" column="1"/>
+        <referencedby refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" compoundref="BSEq_8cpp" startline="83" endline="86">BSEq::f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1a8f27761a53a9f0e7746b9358405a03f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double Option::UpperBdCond</definition>
+        <argsstring>(BSModel *PtrModel, double t)=0</argsstring>
+        <name>UpperBdCond</name>
+        <reimplementedby refid="classPut_1ac15aea264781b4f426b68918ab73a27d">UpperBdCond</reimplementedby>
+        <param>
+          <type><ref refid="classBSModel" kindref="compound">BSModel</ref> *</type>
+          <declname>PtrModel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="30" column="1"/>
+        <referencedby refid="classBSEq_1acebc22c41d04659861ef346d988de565" compoundref="BSEq_8cpp" startline="93" endline="96">BSEq::fu</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classOption_1afda338619f5646c0cb9e6cd5c83717f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double Option::LowerBdCond</definition>
+        <argsstring>(BSModel *PtrModel, double t)=0</argsstring>
+        <name>LowerBdCond</name>
+        <reimplementedby refid="classPut_1ab07d0f1d939f267861484f645d71c9c5">LowerBdCond</reimplementedby>
+        <param>
+          <type><ref refid="classBSModel" kindref="compound">BSModel</ref> *</type>
+          <declname>PtrModel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="31" column="1"/>
+        <referencedby refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" compoundref="BSEq_8cpp" startline="88" endline="91">BSEq::fl</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>Put</label>
+        <link refid="classPut"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Option</label>
+        <link refid="classOption"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>Option</label>
+        <link refid="classOption"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/Options.h" line="23" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/Options.h" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classOption_1afda338619f5646c0cb9e6cd5c83717f9" prot="public" virt="pure-virtual"><scope>Option</scope><name>LowerBdCond</name></member>
+      <member refid="classOption_1a10f2917f21055a1beb890353e53e0865" prot="public" virt="pure-virtual"><scope>Option</scope><name>Payoff</name></member>
+      <member refid="classOption_1ae583dd6d430a3b428014efa942605d54" prot="public" virt="non-virtual"><scope>Option</scope><name>T</name></member>
+      <member refid="classOption_1a8f27761a53a9f0e7746b9358405a03f7" prot="public" virt="pure-virtual"><scope>Option</scope><name>UpperBdCond</name></member>
+      <member refid="classOption_1a37c65100e75876d4f4b76e8647c6702d" prot="public" virt="non-virtual"><scope>Option</scope><name>zl</name></member>
+      <member refid="classOption_1aa80c6f304df39def3df2bf26afbbfe79" prot="public" virt="non-virtual"><scope>Option</scope><name>zu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+\hypertarget{BSEq_8h_source}{\section{B\+S\+Eq.\+h}
+}
+
+\begin{DoxyCode}
+00001 
+00050 \textcolor{preprocessor}{#ifndef BSEq\_h}
+00051 \textcolor{preprocessor}{#define BSEq\_h}
+00052 
+00053 \textcolor{preprocessor}{#include "\hyperlink{BSModel01_8h}{BSModel01.h}"}
+00054 \textcolor{preprocessor}{#include "\hyperlink{Options_8h}{Options.h}"}
+00055 \textcolor{preprocessor}{#include "\hyperlink{ParabPDE_8h}{ParabPDE.h}"}
+00056 
+\hypertarget{BSEq_8h_source_l00057}{}\hyperlink{classBSEq}{00057} \textcolor{keyword}{class }\hyperlink{classBSEq}{BSEq}: \textcolor{keyword}{public} \hyperlink{classParabPDE}{ParabPDE} \{
+00058   \textcolor{keyword}{public}:
+\hypertarget{BSEq_8h_source_l00059}{}\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{00059}     \hyperlink{classBSModel}{BSModel} *\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel};
+\hypertarget{BSEq_8h_source_l00060}{}\hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{00060}     \hyperlink{classOption}{Option} *\hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption};
+00061 
+00062     \hyperlink{classBSEq_a3545b5fe078c573514666f07e3d516b2}{BSEq}(\hyperlink{classBSModel}{BSModel}* PtrModel\_, \hyperlink{classOption}{Option}* PtrOption\_);
+00063 
+00064     \textcolor{keywordtype}{double} \hyperlink{classBSEq_aac9b72618a86b764022bc2f8a0623b0c}{a}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z);
+00065     \textcolor{keywordtype}{double} \hyperlink{classBSEq_a7b0a00c216ae383f5a768c8efd42e672}{b}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z);
+00066     \textcolor{keywordtype}{double} \hyperlink{classBSEq_aa63fc29fedf4ef53ace9499fab4d7aba}{c}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z);
+00067     \textcolor{keywordtype}{double} \hyperlink{classBSEq_ae01526739bc51e813dfdb880585aefc0}{d}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z);
+00068 
+00069     \textcolor{keywordtype}{double} \hyperlink{classBSEq_a6c81cef2ec102bc86bc8ff6378a2a519}{f}(\textcolor{keywordtype}{double} z);
+00070     \textcolor{keywordtype}{double} \hyperlink{classBSEq_a5bde9ad3db5d94df77c78929de7f2717}{fl}(\textcolor{keywordtype}{double} t);
+00071     \textcolor{keywordtype}{double} \hyperlink{classBSEq_acebc22c41d04659861ef346d988de565}{fu}(\textcolor{keywordtype}{double} t);
+00072 \};
+00073 
+00074 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

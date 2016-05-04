@@ -1,0 +1,32 @@
+\hypertarget{ExplicitMethod_8h_source}{\section{Explicit\+Method.\+h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ExplicitMethod\_h}
+00002 \textcolor{preprocessor}{#define ExplicitMethod\_h}
+00003 
+00004 \textcolor{preprocessor}{#include "\hyperlink{FDMethod_8h}{FDMethod.h}"}
+00005 
+\hypertarget{ExplicitMethod_8h_source_l00006}{}\hyperlink{classExplicitMethod}{00006} \textcolor{keyword}{class }\hyperlink{classExplicitMethod}{ExplicitMethod}: \textcolor{keyword}{public} \hyperlink{classFDMethod}{FDMethod} \{
+00007 
+00008   \textcolor{keyword}{public}:
+\hypertarget{ExplicitMethod_8h_source_l00009}{}\hyperlink{classExplicitMethod_a49a9754a22eb54753173fc66c4a3d98b}{00009}     \hyperlink{classExplicitMethod_a49a9754a22eb54753173fc66c4a3d98b}{ExplicitMethod}(\hyperlink{classParabPDE}{ParabPDE}* PtrPDE\_, \textcolor{keywordtype}{int} imax\_, \textcolor{keywordtype}{int} jmax\_):
+00010       \hyperlink{classFDMethod}{FDMethod}(PtrPDE\_, imax\_, jmax\_) \{\}
+00011 
+\hypertarget{ExplicitMethod_8h_source_l00012}{}\hyperlink{classExplicitMethod_a82663c50a40a9877634499d65596e3da}{00012}     \textcolor{keywordtype}{double} \hyperlink{classExplicitMethod_a82663c50a40a9877634499d65596e3da}{A}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \{
+00013       \textcolor{keywordflow}{return} \hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt}*(\hyperlink{classFDMethod_a50c258eaca61c1ed34247ad827379668}{b}(i, j)/2.0 - \hyperlink{classFDMethod_a2b5d6d1d62048312725c60c5a99ee0d1}{a}(i, j)/\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx})/\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx};
+00014     \}
+\hypertarget{ExplicitMethod_8h_source_l00015}{}\hyperlink{classExplicitMethod_a22b9be6bfd28ade5209422a47f6aa9c6}{00015}     \textcolor{keywordtype}{double} \hyperlink{classExplicitMethod_a22b9be6bfd28ade5209422a47f6aa9c6}{B}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \{
+00016       \textcolor{keywordflow}{return} 1.0 - \hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt}*\hyperlink{classFDMethod_ad5c8725fb0379fa8cb29bb0954d60112}{c}(i, j) + 2.0*\hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt}*\hyperlink{classFDMethod_a2b5d6d1d62048312725c60c5a99ee0d1}{a}(i, j)/(\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx}*\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx});
+00017     \}
+\hypertarget{ExplicitMethod_8h_source_l00018}{}\hyperlink{classExplicitMethod_a857b126f5aee76df8fedff16ae506e52}{00018}     \textcolor{keywordtype}{double} \hyperlink{classExplicitMethod_a857b126f5aee76df8fedff16ae506e52}{C}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \{
+00019       \textcolor{keywordflow}{return} -\hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt}*(\hyperlink{classFDMethod_a50c258eaca61c1ed34247ad827379668}{b}(i, j)/2.0 + \hyperlink{classFDMethod_a2b5d6d1d62048312725c60c5a99ee0d1}{a}(i, j)/\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx})/\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx};
+00020     \}
+\hypertarget{ExplicitMethod_8h_source_l00021}{}\hyperlink{classExplicitMethod_af3dffe59f3c812828af74b0de39556cd}{00021}     \textcolor{keywordtype}{double} \hyperlink{classExplicitMethod_af3dffe59f3c812828af74b0de39556cd}{D}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \{
+00022       \textcolor{keywordflow}{return} -\hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt}*\hyperlink{classFDMethod_a4ad2213e6338bdfc2cc8a2b4e7eb0952}{d}(i, j);
+00023     \}
+00024     \textcolor{keywordtype}{void} \hyperlink{classExplicitMethod_ac2c2d5bac3fc414851c2810ff916c2d6}{SolvePDE}( );
+00025 \};
+00026 
+00027 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

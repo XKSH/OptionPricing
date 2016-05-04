@@ -1,0 +1,27 @@
+\hypertarget{Options_8cpp_source}{\section{Options.\+cpp}
+}
+
+\begin{DoxyCode}
+00001 
+00018 \textcolor{preprocessor}{#include <cmath>}
+00019 
+00020 \textcolor{preprocessor}{#include "\hyperlink{Options_8h}{Options.h}"}
+00021 
+\hypertarget{Options_8cpp_source_l00022}{}\hyperlink{classPut_ae2bbadeb2c9f05644ef9b9af97ad7520}{00022} \textcolor{keywordtype}{double} \hyperlink{classPut_ae2bbadeb2c9f05644ef9b9af97ad7520}{Put::Payoff}(\textcolor{keywordtype}{double} z) \{
+00023 
+00024   \textcolor{keywordflow}{if} (\hyperlink{classPut_aa8d5c1c7465fd311ddaf33533038f959}{K} < z) \{
+00025     \textcolor{keywordflow}{return} 0.0;
+00026   \}
+00027   \textcolor{keywordflow}{return} \hyperlink{classPut_aa8d5c1c7465fd311ddaf33533038f959}{K} - z;
+00028 \}
+00029 
+\hypertarget{Options_8cpp_source_l00030}{}\hyperlink{classPut_ac15aea264781b4f426b68918ab73a27d}{00030} \textcolor{keywordtype}{double} \hyperlink{classPut_ac15aea264781b4f426b68918ab73a27d}{Put::UpperBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t) \{
+00031 
+00032   \textcolor{keywordflow}{return} 0.0;
+00033 \}
+00034 
+\hypertarget{Options_8cpp_source_l00035}{}\hyperlink{classPut_ab07d0f1d939f267861484f645d71c9c5}{00035} \textcolor{keywordtype}{double} \hyperlink{classPut_ab07d0f1d939f267861484f645d71c9c5}{Put::LowerBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t) \{
+00036 
+00037   \textcolor{keywordflow}{return} \hyperlink{classPut_aa8d5c1c7465fd311ddaf33533038f959}{K}*exp(-PtrModel->\hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{r}*(\hyperlink{classOption_ae583dd6d430a3b428014efa942605d54}{T} - t));
+00038 \}
+\end{DoxyCode}

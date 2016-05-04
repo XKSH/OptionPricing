@@ -1,0 +1,117 @@
+.TH "BSEq" 3 "Wed May 4 2016" "Option Pricing Example" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BSEq \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BSEq\&.h>\fP
+.PP
+Inherits \fBParabPDE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBSEq\fP (\fBBSModel\fP *PtrModel_, \fBOption\fP *PtrOption_)"
+.br
+.ti -1c
+.RI "double \fBa\fP (double t, double z)"
+.br
+.ti -1c
+.RI "double \fBb\fP (double t, double z)"
+.br
+.ti -1c
+.RI "double \fBc\fP (double t, double z)"
+.br
+.ti -1c
+.RI "double \fBd\fP (double t, double z)"
+.br
+.ti -1c
+.RI "double \fBf\fP (double z)"
+.br
+.ti -1c
+.RI "double \fBfl\fP (double t)"
+.br
+.ti -1c
+.RI "double \fBfu\fP (double t)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBBSModel\fP * \fBPtrModel\fP"
+.br
+.ti -1c
+.RI "\fBOption\fP * \fBPtrOption\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 57 of file BSEq\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BSEq::BSEq (\fBBSModel\fP *PtrModel_, \fBOption\fP *PtrOption_)"
+
+.PP
+Definition at line 54 of file BSEq\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double BSEq::a (doublet, doublez)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 63 of file BSEq\&.cpp\&.
+.SS "double BSEq::b (doublet, doublez)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 68 of file BSEq\&.cpp\&.
+.SS "double BSEq::c (doublet, doublez)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 73 of file BSEq\&.cpp\&.
+.SS "double BSEq::d (doublet, doublez)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 78 of file BSEq\&.cpp\&.
+.SS "double BSEq::f (doublez)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 83 of file BSEq\&.cpp\&.
+.SS "double BSEq::fl (doublet)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 88 of file BSEq\&.cpp\&.
+.SS "double BSEq::fu (doublet)\fC [virtual]\fP"
+
+.PP
+Implements \fBParabPDE\fP\&.
+.PP
+Definition at line 93 of file BSEq\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBSModel\fP* BSEq::PtrModel"
+
+.PP
+Definition at line 59 of file BSEq\&.h\&.
+.SS "\fBOption\fP* BSEq::PtrOption"
+
+.PP
+Definition at line 60 of file BSEq\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Option Pricing Example from the source code\&.

@@ -1,0 +1,30 @@
+\hypertarget{BSModel01_8cpp_source}{\section{B\+S\+Model01.\+cpp}
+}
+
+\begin{DoxyCode}
+00001 
+00019 \textcolor{preprocessor}{#include "\hyperlink{BSModel01_8h}{BSModel01.h}"}
+00020 
+00021 \textcolor{preprocessor}{#include <cmath>}
+00022 
+\hypertarget{BSModel01_8cpp_source_l00023}{}\hyperlink{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}{00023} \textcolor{keyword}{const} \textcolor{keywordtype}{double} \hyperlink{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}{pi} = 4.0*atan(1.0);
+00024 
+\hypertarget{BSModel01_8cpp_source_l00025}{}\hyperlink{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}{00025} \textcolor{keywordtype}{double} \hyperlink{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}{Gauss}( ) \{
+00026 
+00027   \textcolor{keywordtype}{double} U1 = (rand() + 1.0)/(RAND\_MAX + 1.0);
+00028   \textcolor{keywordtype}{double} U2 = (rand() + 1.0)/(RAND\_MAX + 1.0);
+00029 
+00030   \textcolor{keywordflow}{return} sqrt(-2.0*log(U1))*cos(2.0*\hyperlink{BSModel01_8cpp_a43016d873124d39034edb8cd164794db}{pi}*U2);
+00031 \}
+00032 
+\hypertarget{BSModel01_8cpp_source_l00033}{}\hyperlink{classBSModel_aad0f0d6d1b9df4d76d03bd0b477e1347}{00033} \textcolor{keywordtype}{void} \hyperlink{classBSModel_aad0f0d6d1b9df4d76d03bd0b477e1347}{BSModel::GenerateSamplePath}(\textcolor{keywordtype}{double} T, \textcolor{keywordtype}{int} m, 
+      \hyperlink{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{SamplePath}& S) \{
+00034 
+00035   \textcolor{keywordtype}{double} St = \hyperlink{classBSModel_a2b37a14d9aaab033d676dd16381f7f19}{S0};
+00036 
+00037   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} k = 0; k < m; k++) \{
+00038     S[k] = St*exp((\hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{r} - \hyperlink{classBSModel_a1267641043c16cd9baf2eb242320f0d3}{sigma}*\hyperlink{classBSModel_a1267641043c16cd9baf2eb242320f0d3}{sigma}*0.5)*(T/m) + sigma*sqrt(T/m)*\hyperlink{BSModel01_8cpp_aa5430ef684e160310d140e8914e32218}{Gauss}());
+00039     St = S[k];
+00040   \}
+00041 \}
+\end{DoxyCode}

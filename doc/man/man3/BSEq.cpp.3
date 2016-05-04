@@ -1,0 +1,41 @@
+.TH "BSEq.cpp" 3 "Wed May 4 2016" "Option Pricing Example" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BSEq.cpp \- 
+implements a class representing the Black--Scholes equation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include 'BSEq\&.h'\fP
+.br
+
+.SH "Detailed Description"
+.PP 
+A typical reason for studying parabolic partial differential equations in finance is the Black–-Scholes equation\&.
+.PP
+Let $ S(t) $ denote the price at time $ t $ of the underlying asset under the Black–-Scholes equation\&. Suppose that at time $ t $ the price of a financial derivative $ H(t) $ can be expressed using a function $ u $, defined as: \[ H(t) = u(t, S (t)). \] If $ u $ is a $ C^{1,2} $ function on $ [0,T)\times \mathbb{R} $, then the Black--Scholes equation can be used to solve for $ u $\&.
+.PP
+When $ u(t, S(t)) $ is the value of an option with expiry date $ T $ and payoff $ H(T) = h(S(T)) $, then $ u(T, S(T)) = h(S(T)) $, hence the terminal condition is \[ u(T, z) = h(z). \] The lower and upper boundary conditions depend on the type of the option we wish to price\&. They can usually be derived from heuristic or arbitrage arguments\&.
+.PP
+For example, for a \fBput option\fP with expiry date $ T $ and strike price $ K $, if $ S(t) $ is high, then the option is practically worthless since it is unlikely to be exercised\&. This means that we can consider a sufficiently large $ z_u $ and set: \[ u(t, zu) = h^{put}_u(t) = 0. \] Also, if $ S(t) $ is close to zero, then we can assume that we are almost certain to exercise the put at expiry and obtain a payoff close to $ K $\&. Considering a sufficiently small positive $ z_l $ we can therefore set: \[ u(t, zl) = h^{put}_l(t) = exp(-r(T - t))K. \]
+.PP
+\fBWarning:\fP
+.RS 4
+This code is also listed and fully explained in the book **Numerical Methods in Finance with C++** by Maciej Capiński and Tomasz Zastawniak, published in September 2012\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+: Eduardo J\&. Sanchez (ejspeiro) - ejspeiro at gmail dot com 
+.RE
+.PP
+
+.PP
+Definition in file \fBBSEq\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Option Pricing Example from the source code\&.

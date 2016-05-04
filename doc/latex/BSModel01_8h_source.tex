@@ -1,0 +1,36 @@
+\hypertarget{BSModel01_8h_source}{\section{B\+S\+Model01.\+h}
+}
+
+\begin{DoxyCode}
+00001 
+00019 \textcolor{preprocessor}{#ifndef BSModel01\_h}
+00020 \textcolor{preprocessor}{#define BSModel01\_h}
+00021 
+00022 \textcolor{preprocessor}{#include <cstdlib>}
+00023 \textcolor{preprocessor}{#include <ctime>}
+00024 
+00025 \textcolor{preprocessor}{#include <vector>}
+00026 
+00027 \textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+00028 
+\hypertarget{BSModel01_8h_source_l00029}{}\hyperlink{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{00029} \textcolor{keyword}{typedef} vector<double> \hyperlink{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{SamplePath};
+00030 
+\hypertarget{BSModel01_8h_source_l00031}{}\hyperlink{classBSModel}{00031} \textcolor{keyword}{class }\hyperlink{classBSModel}{BSModel} \{
+00032   \textcolor{keyword}{public}:
+\hypertarget{BSModel01_8h_source_l00033}{}\hyperlink{classBSModel_a2b37a14d9aaab033d676dd16381f7f19}{00033}     \textcolor{keywordtype}{double} \hyperlink{classBSModel_a2b37a14d9aaab033d676dd16381f7f19}{S0};
+\hypertarget{BSModel01_8h_source_l00034}{}\hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{00034}     \textcolor{keywordtype}{double} \hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{r};
+\hypertarget{BSModel01_8h_source_l00035}{}\hyperlink{classBSModel_a1267641043c16cd9baf2eb242320f0d3}{00035}     \textcolor{keywordtype}{double} \hyperlink{classBSModel_a1267641043c16cd9baf2eb242320f0d3}{sigma};
+00036 
+\hypertarget{BSModel01_8h_source_l00037}{}\hyperlink{classBSModel_a309dd895251cfd050b2d50a30abfc5fb}{00037}     \hyperlink{classBSModel_a309dd895251cfd050b2d50a30abfc5fb}{BSModel}(\textcolor{keywordtype}{double} S0\_, \textcolor{keywordtype}{double} r\_, \textcolor{keywordtype}{double} sigma\_) \{
+00038 
+00039       S0 = S0\_;
+00040       r = r\_;
+00041       sigma = sigma\_;
+00042       srand(time(NULL));
+00043     \}
+00044 
+00045     \textcolor{keywordtype}{void} GenerateSamplePath(\textcolor{keywordtype}{double} T, \textcolor{keywordtype}{int} m, \hyperlink{BSModel01_8h_afbb1a5715857075c187084894fc00d31}{SamplePath}& S);
+00046 \};
+00047 
+00048 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

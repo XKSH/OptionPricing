@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Introduction</title>
+    <detaileddescription>
+<para>A typical reason for studying parabolic partial differential equations in finance is the Black<ndash/>Scholes equation.</para><para>Let <formula id="3">$ S(t) $</formula> denote the price at time <formula id="4">$ t $</formula> of the underlying asset under the Black<ndash/>Scholes equation. Suppose that at time <formula id="4">$ t $</formula> the price of a financial derivative <formula id="5">$ H(t) $</formula> can be expressed using a function <formula id="6">$ u $</formula>, defined as: <formula id="7">\[ H(t) = u(t, S (t)). \]</formula> If <formula id="6">$ u $</formula> is a <formula id="8">$ C^{1,2} $</formula> function on <formula id="9">$ [0,T)\times \mathbb{R} $</formula>, then the Black<ndash/>Scholes equation can be used to solve for <formula id="6">$ u $</formula>.</para><para>In this project, we study how to construct a minimal framework to encode the mechanisms implementing a standard finite difference explicit method to solve the time-dependent portion of the Black<ndash/>Scholes equation. For the &apos;&apos;spatial&apos;&apos; component, we also use standard finite differences. We use a second-order of numerical accuracy, and we use a nodal grid.</para><para>Future work includes comparing these results with actual data and also compare these results with an approach based on mimetic finite differences.</para><para><simplesect kind="see"><para>This code is also listed and fully explained in the book Numerical Methods in Finance with C++ by Maciej Capiński and Tomasz Zastawniak, published in September 2012.</para></simplesect>
+<simplesect kind="warning"><para>This code is a minimally-complete example intended for research and modeling. This is not intended to be production code. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

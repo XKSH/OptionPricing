@@ -1,0 +1,23 @@
+\hypertarget{ExplicitMethod_8cpp_source}{\section{Explicit\+Method.\+cpp}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "\hyperlink{ExplicitMethod_8h}{ExplicitMethod.h}"}
+00002 
+\hypertarget{ExplicitMethod_8cpp_source_l00003}{}\hyperlink{classExplicitMethod_ac2c2d5bac3fc414851c2810ff916c2d6}{00003} \textcolor{keywordtype}{void} \hyperlink{classExplicitMethod_ac2c2d5bac3fc414851c2810ff916c2d6}{ExplicitMethod::SolvePDE}() \{
+00004 
+00005   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j <= \hyperlink{classFDMethod_a6d4cec47464758c00c5d65cfa676d518}{jmax}; j++) \{
+00006     \hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[\hyperlink{classFDMethod_a72f22ed3e70c7f6084d3499fa7fbad38}{imax}][j] = \hyperlink{classFDMethod_a02f9d3f5c3466f04323bb966b346efae}{f}(j);
+00007   \}
+00008 
+00009   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = \hyperlink{classFDMethod_a72f22ed3e70c7f6084d3499fa7fbad38}{imax}; i > 0; i--) \{
+00010     \hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i - 1][0] = \hyperlink{classFDMethod_add9102baa92871331350bf5d86c12f1a}{fl}(i - 1);
+00011     \hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i - 1][\hyperlink{classFDMethod_a6d4cec47464758c00c5d65cfa676d518}{jmax}] = \hyperlink{classFDMethod_ae282bd4b389fdce1badb5ecaa3c3e8e5}{fu}(i - 1);
+00012 
+00013     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 1; j < \hyperlink{classFDMethod_a6d4cec47464758c00c5d65cfa676d518}{jmax}; j++) \{
+00014       \hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i - 1][j] = \hyperlink{classExplicitMethod_a82663c50a40a9877634499d65596e3da}{A}(i, j)*\hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i][j - 1] + \hyperlink{classExplicitMethod_a22b9be6bfd28ade5209422a47f6aa9c6}{B}(i, j)*\hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i][j] +
+00015         \hyperlink{classExplicitMethod_a857b126f5aee76df8fedff16ae506e52}{C}(i, j)*\hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V}[i][j + 1] + \hyperlink{classExplicitMethod_af3dffe59f3c812828af74b0de39556cd}{D}(i, j);
+00016     \}
+00017   \}
+00018 \}
+\end{DoxyCode}

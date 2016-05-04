@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="ParabPDE_8h" kind="file">
+    <compoundname>ParabPDE.h</compoundname>
+    <includedby refid="BSEq_8h" local="yes">BSEq.h</includedby>
+    <includedby refid="FDMethod_8h" local="yes">FDMethod.h</includedby>
+    <invincdepgraph>
+      <node id="207">
+        <label>FDMethod.cpp</label>
+        <link refid="FDMethod_8cpp"/>
+      </node>
+      <node id="200">
+        <label>ParabPDE.h</label>
+        <link refid="ParabPDE.h"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>Main24.cpp</label>
+        <link refid="Main24_8cpp"/>
+      </node>
+      <node id="205">
+        <label>ExplicitMethod.h</label>
+        <link refid="ExplicitMethod_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>FDMethod.h</label>
+        <link refid="FDMethod_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>BSEq.h</label>
+        <link refid="BSEq_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>ExplicitMethod.cpp</label>
+        <link refid="ExplicitMethod_8cpp"/>
+      </node>
+      <node id="202">
+        <label>BSEq.cpp</label>
+        <link refid="BSEq_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classParabPDE" prot="public">ParabPDE</innerclass>
+    <briefdescription>
+<para>Definition of a class for parabolic partial differential equations. </para>    </briefdescription>
+    <detaileddescription>
+<para>Let us consider the parabolic partial differential equation: <formula id="1">\[ \frac{\partial v(x,t)}{\partial t} = a(x,t)\frac{\partial^2 v(x,t)}{\partial x^2} + b(x,t)\frac{\partial v(x,t)}{\partial x} + c(x,t)v(x,t) + d(x,t). \]</formula> We look for a solution to this equations for <formula id="20">$(t, x) \in [0, T]\times [x_l, x_u]$</formula>, with <formula id="31">$ x_l, x_u \in \mathbb{R} $</formula> and <formula id="34">$ x_l &lt; x_u $</formula>. To do so we need to impose the following boundary conditions: <formula id="23">\[ v(T,x) = f(x), \]</formula> <formula id="24">\[ v(t,x_l) = f_l(t), \]</formula> <formula id="25">\[ v(t, x_u) = f_u(t), \]</formula> where <formula id="32">$ f: [x_l, x_u] \longmapsto \mathbb{R} $</formula> and <formula id="33">$ f_l, f_u: [0, T] \longmapsto \mathbb{R} $</formula> are given functions. We refer to <formula id="28">$ f $</formula> as the <bold>terminal boundary condition</bold>, to <formula id="29">$ f_l $</formula> as the <bold>lower boundary condition</bold> and to <formula id="30">$ f_u $</formula> as the <bold>upper boundary condition</bold>.</para><para><simplesect kind="author"><para>: Eduardo J. Sanchez (ejspeiro) - ejspeiro at gmail dot com </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#ifndef<sp/>ParabPDE_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ParabPDE_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classParabPDE" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classParabPDE" kindref="compound">ParabPDE</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" kindref="member">xl</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" kindref="member">xu</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1a809e251d53ff62714bc8a30e45cc88a5" kindref="member">a</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1ab98c81bf66471fa6f67dc17b9123bda6" kindref="member">b</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1aebec9339309e456136ecd0c3b4a74bb0" kindref="member">c</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1a13531e677a97660f56f88fc8a9f2c593" kindref="member">d</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1a099b6ba266fb033de9901a60dc935ddf" kindref="member">f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1a8a1850597550bf8aab3b5dca2aed6ff8" kindref="member">fu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classParabPDE_1aa083d2745f44daba57ad296749eb7ec0" kindref="member">fl</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/ParabPDE.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="Options_8cpp" kind="file">
+    <compoundname>Options.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="Options_8h" local="yes">Options.h</includes>
+    <incdepgraph>
+      <node id="183">
+        <label>Options.h</label>
+        <link refid="Options_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>cmath</label>
+      </node>
+      <node id="181">
+        <label>Options.cpp</label>
+        <link refid="Options.cpp"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>ctime</label>
+      </node>
+      <node id="187">
+        <label>vector</label>
+      </node>
+      <node id="185">
+        <label>cstdlib</label>
+      </node>
+      <node id="184">
+        <label>BSModel01.h</label>
+        <link refid="BSModel01_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Implementation of classes to represent an option an a put option. </para>    </briefdescription>
+    <detaileddescription>
+<para>We write out classes which will be used to store the coefficients and boundary conditions in order to price options under the Black<ndash/>Scholes equation. We represent an option as an abstract class. Its methods will the overridden by the put option class</para><para><simplesect kind="warning"><para>This code is also listed and fully explained in the book **Numerical Methods in Finance with C++** by Maciej Capiński and Tomasz Zastawniak, published in September 2012.</para></simplesect>
+<simplesect kind="author"><para>: Eduardo J. Sanchez (ejspeiro) - ejspeiro at gmail dot com </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Options_8h" kindref="compound">Options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classPut_1ae2bbadeb2c9f05644ef9b9af97ad7520" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classPut_1ae2bbadeb2c9f05644ef9b9af97ad7520" kindref="member">Put::Payoff</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classPut_1aa8d5c1c7465fd311ddaf33533038f959" kindref="member">K</ref><sp/>&lt;<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPut_1aa8d5c1c7465fd311ddaf33533038f959" kindref="member">K</ref><sp/>-<sp/>z;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classPut_1ac15aea264781b4f426b68918ab73a27d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classPut_1ac15aea264781b4f426b68918ab73a27d" kindref="member">Put::UpperBdCond</ref>(<ref refid="classBSModel" kindref="compound">BSModel</ref>*<sp/>PtrModel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classPut_1ab07d0f1d939f267861484f645d71c9c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classPut_1ab07d0f1d939f267861484f645d71c9c5" kindref="member">Put::LowerBdCond</ref>(<ref refid="classBSModel" kindref="compound">BSModel</ref>*<sp/>PtrModel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classPut_1aa8d5c1c7465fd311ddaf33533038f959" kindref="member">K</ref>*exp(-PtrModel-&gt;<ref refid="classBSModel_1add3230c0df8e47623116b439598c0de3" kindref="member">r</ref>*(<ref refid="classOption_1ae583dd6d430a3b428014efa942605d54" kindref="member">T</ref><sp/>-<sp/>t));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/Options.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+A typical reason for studying parabolic partial differential equations in finance is the Black--Scholes equation.
+
+Let $ S(t) $ denote the price at time $ t $ of the underlying asset under the Black--Scholes equation. Suppose that at time $ t $ the price of a financial derivative $ H(t) $ can be expressed using a function $ u $, defined as\+: \[ H(t) = u(t, S (t)). \] If $ u $ is a $ C^{1,2} $ function on $ [0,T)\times \mathbb{R} $, then the Black--Scholes equation can be used to solve for $ u $.
+
+In this project, we study how to construct a minimal framework to encode the mechanisms implementing a standard finite difference explicit method to solve the time-\/dependent portion of the Black--Scholes equation. For the ''spatial'' component, we also use standard finite differences. We use a second-\/order of numerical accuracy, and we use a nodal grid.
+
+Future work includes comparing these results with actual data and also compare these results with an approach based on mimetic finite differences.
+
+\begin{DoxySeeAlso}{See also}
+This code is also listed and fully explained in the book Numerical Methods in Finance with C++ by Maciej Capiński and Tomasz Zastawniak, published in September 2012.
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+This code is a minimally-\/complete example intended for research and modeling. This is not intended to be production code. 
+\end{DoxyWarning}

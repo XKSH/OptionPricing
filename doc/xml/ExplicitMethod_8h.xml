@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="ExplicitMethod_8h" kind="file">
+    <compoundname>ExplicitMethod.h</compoundname>
+    <includes refid="FDMethod_8h" local="yes">FDMethod.h</includes>
+    <includedby refid="ExplicitMethod_8cpp" local="yes">ExplicitMethod.cpp</includedby>
+    <includedby refid="Main24_8cpp" local="yes">Main24.cpp</includedby>
+    <incdepgraph>
+      <node id="152">
+        <label>ParabPDE.h</label>
+        <link refid="ParabPDE_8h"/>
+      </node>
+      <node id="149">
+        <label>ExplicitMethod.h</label>
+        <link refid="ExplicitMethod.h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>FDMethod.h</label>
+        <link refid="FDMethod_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="155">
+        <label>Main24.cpp</label>
+        <link refid="Main24_8cpp"/>
+      </node>
+      <node id="153">
+        <label>ExplicitMethod.h</label>
+        <link refid="ExplicitMethod.h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>ExplicitMethod.cpp</label>
+        <link refid="ExplicitMethod_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classExplicitMethod" prot="public">ExplicitMethod</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ExplicitMethod_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ExplicitMethod_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FDMethod_8h" kindref="compound">FDMethod.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classExplicitMethod" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classExplicitMethod" kindref="compound">ExplicitMethod</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFDMethod" kindref="compound">FDMethod</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classExplicitMethod_1a49a9754a22eb54753173fc66c4a3d98b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classExplicitMethod_1a49a9754a22eb54753173fc66c4a3d98b" kindref="member">ExplicitMethod</ref>(<ref refid="classParabPDE" kindref="compound">ParabPDE</ref>*<sp/>PtrPDE_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jmax_):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFDMethod" kindref="compound">FDMethod</ref>(PtrPDE_,<sp/>imax_,<sp/>jmax_)<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" kindref="member">A</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>*(<ref refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" kindref="member">b</ref>(i,<sp/>j)/2.0<sp/>-<sp/><ref refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" kindref="member">a</ref>(i,<sp/>j)/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>)/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15" refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" kindref="member">B</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0<sp/>-<sp/><ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>*<ref refid="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" kindref="member">c</ref>(i,<sp/>j)<sp/>+<sp/>2.0*<ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>*<ref refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" kindref="member">a</ref>(i,<sp/>j)/(<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>*<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18" refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" kindref="member">C</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>*(<ref refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" kindref="member">b</ref>(i,<sp/>j)/2.0<sp/>+<sp/><ref refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" kindref="member">a</ref>(i,<sp/>j)/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>)/<ref refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" kindref="member">dx</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21" refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" kindref="member">D</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" kindref="member">dt</ref>*<ref refid="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" kindref="member">d</ref>(i,<sp/>j);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" kindref="member">SolvePDE</ref>(<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h"/>
+  </compounddef>
+</doxygen>

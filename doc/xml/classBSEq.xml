@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classBSEq" kind="class" prot="public">
+    <compoundname>BSEq</compoundname>
+    <basecompoundref refid="classParabPDE" prot="public" virt="non-virtual">ParabPDE</basecompoundref>
+    <includes refid="BSEq_8h" local="no">BSEq.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" prot="public" static="no" mutable="no">
+        <type><ref refid="classBSModel" kindref="compound">BSModel</ref> *</type>
+        <definition>BSModel* BSEq::PtrModel</definition>
+        <argsstring></argsstring>
+        <name>PtrModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="59" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq</referencedby>
+        <referencedby refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" compoundref="BSEq_8cpp" startline="63" endline="66">a</referencedby>
+        <referencedby refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" compoundref="BSEq_8cpp" startline="68" endline="71">b</referencedby>
+        <referencedby refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" compoundref="BSEq_8cpp" startline="73" endline="76">c</referencedby>
+        <referencedby refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" compoundref="BSEq_8cpp" startline="88" endline="91">fl</referencedby>
+        <referencedby refid="classBSEq_1acebc22c41d04659861ef346d988de565" compoundref="BSEq_8cpp" startline="93" endline="96">fu</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" prot="public" static="no" mutable="no">
+        <type><ref refid="classOption" kindref="compound">Option</ref> *</type>
+        <definition>Option* BSEq::PtrOption</definition>
+        <argsstring></argsstring>
+        <name>PtrOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="60" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" compoundref="BSEq_8cpp" startline="54" endline="61">BSEq</referencedby>
+        <referencedby refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" compoundref="BSEq_8cpp" startline="83" endline="86">f</referencedby>
+        <referencedby refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" compoundref="BSEq_8cpp" startline="88" endline="91">fl</referencedby>
+        <referencedby refid="classBSEq_1acebc22c41d04659861ef346d988de565" compoundref="BSEq_8cpp" startline="93" endline="96">fu</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBSEq_1a3545b5fe078c573514666f07e3d516b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BSEq::BSEq</definition>
+        <argsstring>(BSModel *PtrModel_, Option *PtrOption_)</argsstring>
+        <name>BSEq</name>
+        <param>
+          <type><ref refid="classBSModel" kindref="compound">BSModel</ref> *</type>
+          <declname>PtrModel_</declname>
+        </param>
+        <param>
+          <type><ref refid="classOption" kindref="compound">Option</ref> *</type>
+          <declname>PtrOption_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="62" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="54" bodyend="61"/>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+        <references refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" compoundref="BSEq_8h" startline="60">PtrOption</references>
+        <references refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" compoundref="ParabPDE_8h" startline="37">ParabPDE::T</references>
+        <references refid="classOption_1ae583dd6d430a3b428014efa942605d54" compoundref="Options_8h" startline="25">Option::T</references>
+        <references refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" compoundref="ParabPDE_8h" startline="38">ParabPDE::xl</references>
+        <references refid="classOption_1a37c65100e75876d4f4b76e8647c6702d" compoundref="Options_8h" startline="26">Option::zl</references>
+        <references refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" compoundref="ParabPDE_8h" startline="39">ParabPDE::xu</references>
+        <references refid="classOption_1aa80c6f304df39def3df2bf26afbbfe79" compoundref="Options_8h" startline="27">Option::zu</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::a</definition>
+        <argsstring>(double t, double z)</argsstring>
+        <name>a</name>
+        <reimplements refid="classParabPDE_1a809e251d53ff62714bc8a30e45cc88a5">a</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="64" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="63" bodyend="66"/>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+        <references refid="classBSModel_1a1267641043c16cd9baf2eb242320f0d3" compoundref="BSModel01_8h" startline="35">BSModel::sigma</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::b</definition>
+        <argsstring>(double t, double z)</argsstring>
+        <name>b</name>
+        <reimplements refid="classParabPDE_1ab98c81bf66471fa6f67dc17b9123bda6">b</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="65" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="68" bodyend="71"/>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+        <references refid="classBSModel_1add3230c0df8e47623116b439598c0de3" compoundref="BSModel01_8h" startline="34">BSModel::r</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::c</definition>
+        <argsstring>(double t, double z)</argsstring>
+        <name>c</name>
+        <reimplements refid="classParabPDE_1aebec9339309e456136ecd0c3b4a74bb0">c</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="66" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="73" bodyend="76"/>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+        <references refid="classBSModel_1add3230c0df8e47623116b439598c0de3" compoundref="BSModel01_8h" startline="34">BSModel::r</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1ae01526739bc51e813dfdb880585aefc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::d</definition>
+        <argsstring>(double t, double z)</argsstring>
+        <name>d</name>
+        <reimplements refid="classParabPDE_1a13531e677a97660f56f88fc8a9f2c593">d</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="67" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::f</definition>
+        <argsstring>(double z)</argsstring>
+        <name>f</name>
+        <reimplements refid="classParabPDE_1a099b6ba266fb033de9901a60dc935ddf">f</reimplements>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="69" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="83" bodyend="86"/>
+        <references refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" compoundref="BSEq_8h" startline="60">PtrOption</references>
+        <references refid="classOption_1a10f2917f21055a1beb890353e53e0865">Option::Payoff</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::fl</definition>
+        <argsstring>(double t)</argsstring>
+        <name>fl</name>
+        <reimplements refid="classParabPDE_1aa083d2745f44daba57ad296749eb7ec0">fl</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="70" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="88" bodyend="91"/>
+        <references refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" compoundref="BSEq_8h" startline="60">PtrOption</references>
+        <references refid="classOption_1afda338619f5646c0cb9e6cd5c83717f9">Option::LowerBdCond</references>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+      </memberdef>
+      <memberdef kind="function" id="classBSEq_1acebc22c41d04659861ef346d988de565" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BSEq::fu</definition>
+        <argsstring>(double t)</argsstring>
+        <name>fu</name>
+        <reimplements refid="classParabPDE_1a8a1850597550bf8aab3b5dca2aed6ff8">fu</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="71" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp" bodystart="93" bodyend="96"/>
+        <references refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" compoundref="BSEq_8h" startline="60">PtrOption</references>
+        <references refid="classOption_1a8f27761a53a9f0e7746b9358405a03f7">Option::UpperBdCond</references>
+        <references refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" compoundref="BSEq_8h" startline="59">PtrModel</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>BSEq</label>
+        <link refid="classBSEq"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>BSEq</label>
+        <link refid="classBSEq"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>+PtrOption</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>+PtrModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Option</label>
+        <link refid="classOption"/>
+      </node>
+      <node id="38">
+        <label>BSModel</label>
+        <link refid="classBSModel"/>
+      </node>
+      <node id="36">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.h" line="57" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/BSEq.h" bodystart="57" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" prot="public" virt="virtual"><scope>BSEq</scope><name>a</name></member>
+      <member refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" prot="public" virt="virtual"><scope>BSEq</scope><name>b</name></member>
+      <member refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" prot="public" virt="non-virtual"><scope>BSEq</scope><name>BSEq</name></member>
+      <member refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" prot="public" virt="virtual"><scope>BSEq</scope><name>c</name></member>
+      <member refid="classBSEq_1ae01526739bc51e813dfdb880585aefc0" prot="public" virt="virtual"><scope>BSEq</scope><name>d</name></member>
+      <member refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" prot="public" virt="virtual"><scope>BSEq</scope><name>f</name></member>
+      <member refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" prot="public" virt="virtual"><scope>BSEq</scope><name>fl</name></member>
+      <member refid="classBSEq_1acebc22c41d04659861ef346d988de565" prot="public" virt="virtual"><scope>BSEq</scope><name>fu</name></member>
+      <member refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" prot="public" virt="non-virtual"><scope>BSEq</scope><name>PtrModel</name></member>
+      <member refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" prot="public" virt="non-virtual"><scope>BSEq</scope><name>PtrOption</name></member>
+      <member refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" prot="public" virt="non-virtual"><scope>BSEq</scope><name>T</name></member>
+      <member refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" prot="public" virt="non-virtual"><scope>BSEq</scope><name>xl</name></member>
+      <member refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" prot="public" virt="non-virtual"><scope>BSEq</scope><name>xu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

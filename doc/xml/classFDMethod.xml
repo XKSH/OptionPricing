@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classFDMethod" kind="class" prot="public">
+    <compoundname>FDMethod</compoundname>
+    <derivedcompoundref refid="classExplicitMethod" prot="public" virt="non-virtual">ExplicitMethod</derivedcompoundref>
+    <includes refid="FDMethod_8h" local="no">FDMethod.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" prot="public" static="no" mutable="no">
+        <type><ref refid="classParabPDE" kindref="compound">ParabPDE</ref> *</type>
+        <definition>ParabPDE* FDMethod::PtrPDE</definition>
+        <argsstring></argsstring>
+        <name>PtrPDE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="14" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FDMethod::imax</definition>
+        <argsstring></argsstring>
+        <name>imax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="15" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FDMethod::jmax</definition>
+        <argsstring></argsstring>
+        <name>jmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="16" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFDMethod_1aec2698863360e900a8d84f7d672484c9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FDMethod::dx</definition>
+        <argsstring></argsstring>
+        <name>dx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="17" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" compoundref="ExplicitMethod_8h" startline="12" endline="14">ExplicitMethod::A</referencedby>
+        <referencedby refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" compoundref="ExplicitMethod_8h" startline="15" endline="17">ExplicitMethod::B</referencedby>
+        <referencedby refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" compoundref="ExplicitMethod_8h" startline="18" endline="20">ExplicitMethod::C</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFDMethod_1a4748bd052a59842154022b9aa6b55737" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FDMethod::dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="18" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" compoundref="ExplicitMethod_8h" startline="12" endline="14">ExplicitMethod::A</referencedby>
+        <referencedby refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" compoundref="ExplicitMethod_8h" startline="15" endline="17">ExplicitMethod::B</referencedby>
+        <referencedby refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" compoundref="ExplicitMethod_8h" startline="18" endline="20">ExplicitMethod::C</referencedby>
+        <referencedby refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" compoundref="ExplicitMethod_8h" startline="21" endline="23">ExplicitMethod::D</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="FDMethod_8h_1a9a0795b74fd145527f628932c8884ffe" kindref="member">Vector</ref> &gt;</type>
+        <definition>vector&lt;Vector&gt; FDMethod::V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="19" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+        <referencedby refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" compoundref="FDMethod_8cpp" startline="3" endline="15">FDMethod</referencedby>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDMethod::FDMethod</definition>
+        <argsstring>(ParabPDE *PtrPDE_, int imax_, int jmax_)</argsstring>
+        <name>FDMethod</name>
+        <param>
+          <type><ref refid="classParabPDE" kindref="compound">ParabPDE</ref> *</type>
+          <declname>PtrPDE_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imax_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jmax_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="21" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.cpp" bodystart="3" bodyend="15"/>
+        <references refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" compoundref="FDMethod_8h" startline="14">PtrPDE</references>
+        <references refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" compoundref="FDMethod_8h" startline="15">imax</references>
+        <references refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" compoundref="FDMethod_8h" startline="16">jmax</references>
+        <references refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" compoundref="FDMethod_8h" startline="17">dx</references>
+        <references refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" compoundref="ParabPDE_8h" startline="39">ParabPDE::xu</references>
+        <references refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" compoundref="ParabPDE_8h" startline="38">ParabPDE::xl</references>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">dt</references>
+        <references refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" compoundref="ParabPDE_8h" startline="37">ParabPDE::T</references>
+        <references refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" compoundref="FDMethod_8h" startline="19">V</references>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a9aaf3e419045497b888808537fef2b19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::t</definition>
+        <argsstring>(double i)</argsstring>
+        <name>t</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="23" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="23" bodyend="25"/>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::x</definition>
+        <argsstring>(int j)</argsstring>
+        <name>x</name>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="26" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="26" bodyend="28"/>
+        <references refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" compoundref="ParabPDE_8h" startline="38">ParabPDE::xl</references>
+        <referencedby refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" compoundref="FDMethod_8cpp" startline="17" endline="29">v</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::a</definition>
+        <argsstring>(double i, int j)</argsstring>
+        <name>a</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="29" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="29" bodyend="31"/>
+        <references refid="classParabPDE_1a809e251d53ff62714bc8a30e45cc88a5">ParabPDE::a</references>
+        <referencedby refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" compoundref="ExplicitMethod_8h" startline="12" endline="14">ExplicitMethod::A</referencedby>
+        <referencedby refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" compoundref="ExplicitMethod_8h" startline="15" endline="17">ExplicitMethod::B</referencedby>
+        <referencedby refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" compoundref="ExplicitMethod_8h" startline="18" endline="20">ExplicitMethod::C</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a50c258eaca61c1ed34247ad827379668" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::b</definition>
+        <argsstring>(double i, int j)</argsstring>
+        <name>b</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="32" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="32" bodyend="34"/>
+        <references refid="classParabPDE_1ab98c81bf66471fa6f67dc17b9123bda6">ParabPDE::b</references>
+        <referencedby refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" compoundref="ExplicitMethod_8h" startline="12" endline="14">ExplicitMethod::A</referencedby>
+        <referencedby refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" compoundref="ExplicitMethod_8h" startline="18" endline="20">ExplicitMethod::C</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::c</definition>
+        <argsstring>(double i, int j)</argsstring>
+        <name>c</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="35" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="35" bodyend="37"/>
+        <references refid="classParabPDE_1aebec9339309e456136ecd0c3b4a74bb0">ParabPDE::c</references>
+        <referencedby refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" compoundref="ExplicitMethod_8h" startline="15" endline="17">ExplicitMethod::B</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::d</definition>
+        <argsstring>(double i, int j)</argsstring>
+        <name>d</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="38" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="38" bodyend="40"/>
+        <references refid="classParabPDE_1a13531e677a97660f56f88fc8a9f2c593">ParabPDE::d</references>
+        <referencedby refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" compoundref="ExplicitMethod_8h" startline="21" endline="23">ExplicitMethod::D</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a02f9d3f5c3466f04323bb966b346efae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::f</definition>
+        <argsstring>(int j)</argsstring>
+        <name>f</name>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="41" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="41" bodyend="43"/>
+        <references refid="classParabPDE_1a099b6ba266fb033de9901a60dc935ddf">ParabPDE::f</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1ae282bd4b389fdce1badb5ecaa3c3e8e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::fu</definition>
+        <argsstring>(int i)</argsstring>
+        <name>fu</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="44" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="44" bodyend="46"/>
+        <references refid="classParabPDE_1a8a1850597550bf8aab3b5dca2aed6ff8">ParabPDE::fu</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1add9102baa92871331350bf5d86c12f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::fl</definition>
+        <argsstring>(int i)</argsstring>
+        <name>fl</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="47" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="47" bodyend="49"/>
+        <references refid="classParabPDE_1aa083d2745f44daba57ad296749eb7ec0">ParabPDE::fl</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">ExplicitMethod::SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FDMethod::v</definition>
+        <argsstring>(double t, double x)</argsstring>
+        <name>v</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="50" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.cpp" bodystart="17" bodyend="29"/>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">dt</references>
+        <references refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" compoundref="FDMethod_8h" startline="14">PtrPDE</references>
+        <references refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" compoundref="ParabPDE_8h" startline="38">ParabPDE::xl</references>
+        <references refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" compoundref="FDMethod_8h" startline="17">dx</references>
+        <references refid="classFDMethod_1a9aaf3e419045497b888808537fef2b19" compoundref="FDMethod_8h" startline="23" endline="25">t</references>
+        <references refid="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" compoundref="FDMethod_8h" startline="26" endline="28">x</references>
+        <references refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" compoundref="FDMethod_8h" startline="19">V</references>
+        <referencedby refid="Main24_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="Main24_8cpp" startline="72" endline="97">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="50">
+        <label>ExplicitMethod</label>
+        <link refid="classExplicitMethod"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>FDMethod</label>
+        <link refid="classFDMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="55">
+        <label>T</label>
+      </node>
+      <node id="54">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="55" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>FDMethod</label>
+        <link refid="classFDMethod"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>+PtrPDE</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>+V</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+      <node id="53">
+        <label>std::vector&lt; Vector &gt;</label>
+        <childnode refid="54" relation="template-instance">
+          <edgelabel>&lt; Vector &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" line="12" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/FDMethod.h" bodystart="12" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>a</name></member>
+      <member refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>b</name></member>
+      <member refid="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>c</name></member>
+      <member refid="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>d</name></member>
+      <member refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>dt</name></member>
+      <member refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>dx</name></member>
+      <member refid="classFDMethod_1a02f9d3f5c3466f04323bb966b346efae" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>f</name></member>
+      <member refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>FDMethod</name></member>
+      <member refid="classFDMethod_1add9102baa92871331350bf5d86c12f1a" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>fl</name></member>
+      <member refid="classFDMethod_1ae282bd4b389fdce1badb5ecaa3c3e8e5" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>fu</name></member>
+      <member refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>imax</name></member>
+      <member refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>jmax</name></member>
+      <member refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>PtrPDE</name></member>
+      <member refid="classFDMethod_1a9aaf3e419045497b888808537fef2b19" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>t</name></member>
+      <member refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>v</name></member>
+      <member refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>V</name></member>
+      <member refid="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" prot="public" virt="non-virtual"><scope>FDMethod</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classExplicitMethod" kind="class" prot="public">
+    <compoundname>ExplicitMethod</compoundname>
+    <basecompoundref refid="classFDMethod" prot="public" virt="non-virtual">FDMethod</basecompoundref>
+    <includes refid="ExplicitMethod_8h" local="no">ExplicitMethod.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classExplicitMethod_1a49a9754a22eb54753173fc66c4a3d98b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExplicitMethod::ExplicitMethod</definition>
+        <argsstring>(ParabPDE *PtrPDE_, int imax_, int jmax_)</argsstring>
+        <name>ExplicitMethod</name>
+        <param>
+          <type><ref refid="classParabPDE" kindref="compound">ParabPDE</ref> *</type>
+          <declname>PtrPDE_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imax_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jmax_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="9" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="9" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ExplicitMethod::A</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>A</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="12" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="12" bodyend="14"/>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">FDMethod::dt</references>
+        <references refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" compoundref="FDMethod_8h" startline="32" endline="34">FDMethod::b</references>
+        <references refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" compoundref="FDMethod_8h" startline="29" endline="31">FDMethod::a</references>
+        <references refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" compoundref="FDMethod_8h" startline="17">FDMethod::dx</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ExplicitMethod::B</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>B</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="15" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="15" bodyend="17"/>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">FDMethod::dt</references>
+        <references refid="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" compoundref="FDMethod_8h" startline="35" endline="37">FDMethod::c</references>
+        <references refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" compoundref="FDMethod_8h" startline="29" endline="31">FDMethod::a</references>
+        <references refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" compoundref="FDMethod_8h" startline="17">FDMethod::dx</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ExplicitMethod::C</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>C</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="18" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="18" bodyend="20"/>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">FDMethod::dt</references>
+        <references refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" compoundref="FDMethod_8h" startline="32" endline="34">FDMethod::b</references>
+        <references refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" compoundref="FDMethod_8h" startline="29" endline="31">FDMethod::a</references>
+        <references refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" compoundref="FDMethod_8h" startline="17">FDMethod::dx</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ExplicitMethod::D</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>D</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="21" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="21" bodyend="23"/>
+        <references refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" compoundref="FDMethod_8h" startline="18">FDMethod::dt</references>
+        <references refid="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" compoundref="FDMethod_8h" startline="38" endline="40">FDMethod::d</references>
+        <referencedby refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" compoundref="ExplicitMethod_8cpp" startline="3" endline="18">SolvePDE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ExplicitMethod::SolvePDE</definition>
+        <argsstring>()</argsstring>
+        <name>SolvePDE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="24" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.cpp" bodystart="3" bodyend="18"/>
+        <references refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" compoundref="FDMethod_8h" startline="16">FDMethod::jmax</references>
+        <references refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" compoundref="FDMethod_8h" startline="19">FDMethod::V</references>
+        <references refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" compoundref="FDMethod_8h" startline="15">FDMethod::imax</references>
+        <references refid="classFDMethod_1a02f9d3f5c3466f04323bb966b346efae" compoundref="FDMethod_8h" startline="41" endline="43">FDMethod::f</references>
+        <references refid="classFDMethod_1add9102baa92871331350bf5d86c12f1a" compoundref="FDMethod_8h" startline="47" endline="49">FDMethod::fl</references>
+        <references refid="classFDMethod_1ae282bd4b389fdce1badb5ecaa3c3e8e5" compoundref="FDMethod_8h" startline="44" endline="46">FDMethod::fu</references>
+        <references refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" compoundref="ExplicitMethod_8h" startline="12" endline="14">A</references>
+        <references refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" compoundref="ExplicitMethod_8h" startline="15" endline="17">B</references>
+        <references refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" compoundref="ExplicitMethod_8h" startline="18" endline="20">C</references>
+        <references refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" compoundref="ExplicitMethod_8h" startline="21" endline="23">D</references>
+        <referencedby refid="Main24_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="Main24_8cpp" startline="72" endline="97">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>ExplicitMethod</label>
+        <link refid="classExplicitMethod"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>FDMethod</label>
+        <link refid="classFDMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>T</label>
+      </node>
+      <node id="47">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="48" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>ExplicitMethod</label>
+        <link refid="classExplicitMethod"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>FDMethod</label>
+        <link refid="classFDMethod"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>+PtrPDE</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>+V</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>ParabPDE</label>
+        <link refid="classParabPDE"/>
+      </node>
+      <node id="46">
+        <label>std::vector&lt; Vector &gt;</label>
+        <childnode refid="47" relation="template-instance">
+          <edgelabel>&lt; Vector &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" line="6" column="1" bodyfile="/home/esanchez/Dropbox/OptionPricing/ExplicitMethod.h" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classExplicitMethod_1a82663c50a40a9877634499d65596e3da" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>A</name></member>
+      <member refid="classFDMethod_1a2b5d6d1d62048312725c60c5a99ee0d1" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>a</name></member>
+      <member refid="classFDMethod_1a50c258eaca61c1ed34247ad827379668" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>b</name></member>
+      <member refid="classExplicitMethod_1a22b9be6bfd28ade5209422a47f6aa9c6" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>B</name></member>
+      <member refid="classExplicitMethod_1a857b126f5aee76df8fedff16ae506e52" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>C</name></member>
+      <member refid="classFDMethod_1ad5c8725fb0379fa8cb29bb0954d60112" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>c</name></member>
+      <member refid="classFDMethod_1a4ad2213e6338bdfc2cc8a2b4e7eb0952" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>d</name></member>
+      <member refid="classExplicitMethod_1af3dffe59f3c812828af74b0de39556cd" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>D</name></member>
+      <member refid="classFDMethod_1a4748bd052a59842154022b9aa6b55737" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>dt</name></member>
+      <member refid="classFDMethod_1aec2698863360e900a8d84f7d672484c9" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>dx</name></member>
+      <member refid="classExplicitMethod_1a49a9754a22eb54753173fc66c4a3d98b" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>ExplicitMethod</name></member>
+      <member refid="classFDMethod_1a02f9d3f5c3466f04323bb966b346efae" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>f</name></member>
+      <member refid="classFDMethod_1a87a98e06038c3bc9e88e639ded56d1cb" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>FDMethod</name></member>
+      <member refid="classFDMethod_1add9102baa92871331350bf5d86c12f1a" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>fl</name></member>
+      <member refid="classFDMethod_1ae282bd4b389fdce1badb5ecaa3c3e8e5" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>fu</name></member>
+      <member refid="classFDMethod_1a72f22ed3e70c7f6084d3499fa7fbad38" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>imax</name></member>
+      <member refid="classFDMethod_1a6d4cec47464758c00c5d65cfa676d518" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>jmax</name></member>
+      <member refid="classFDMethod_1a900e2425569c70cf67c0b89fbeb15aba" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>PtrPDE</name></member>
+      <member refid="classExplicitMethod_1ac2c2d5bac3fc414851c2810ff916c2d6" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>SolvePDE</name></member>
+      <member refid="classFDMethod_1a9aaf3e419045497b888808537fef2b19" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>t</name></member>
+      <member refid="classFDMethod_1a627ca1e8a18af23dbbe44a43cbc2831e" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>V</name></member>
+      <member refid="classFDMethod_1a703b25f3d7f5083bfd9fbbe9e1906946" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>v</name></member>
+      <member refid="classFDMethod_1a8e5c9b6b56eb6c9d00267a4028814314" prot="public" virt="non-virtual"><scope>ExplicitMethod</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="BSEq_8cpp" kind="file">
+    <compoundname>BSEq.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="BSEq_8h" local="yes">BSEq.h</includes>
+    <incdepgraph>
+      <node id="113">
+        <label>ParabPDE.h</label>
+        <link refid="ParabPDE_8h"/>
+      </node>
+      <node id="112">
+        <label>Options.h</label>
+        <link refid="Options_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>cmath</label>
+      </node>
+      <node id="107">
+        <label>BSEq.h</label>
+        <link refid="BSEq_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>ctime</label>
+      </node>
+      <node id="111">
+        <label>vector</label>
+      </node>
+      <node id="109">
+        <label>cstdlib</label>
+      </node>
+      <node id="105">
+        <label>BSEq.cpp</label>
+        <link refid="BSEq.cpp"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>BSModel01.h</label>
+        <link refid="BSModel01_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>implements a class representing the Black<ndash/>Scholes equation. </para>    </briefdescription>
+    <detaileddescription>
+<para>A typical reason for studying parabolic partial differential equations in finance is the Black–-Scholes equation.</para><para>Let <formula id="3">$ S(t) $</formula> denote the price at time <formula id="4">$ t $</formula> of the underlying asset under the Black–-Scholes equation. Suppose that at time <formula id="4">$ t $</formula> the price of a financial derivative <formula id="5">$ H(t) $</formula> can be expressed using a function <formula id="6">$ u $</formula>, defined as: <formula id="7">\[ H(t) = u(t, S (t)). \]</formula> If <formula id="6">$ u $</formula> is a <formula id="8">$ C^{1,2} $</formula> function on <formula id="9">$ [0,T)\times \mathbb{R} $</formula>, then the Black<ndash/>Scholes equation can be used to solve for <formula id="6">$ u $</formula>.</para><para>When <formula id="10">$ u(t, S(t)) $</formula> is the value of an option with expiry date <formula id="11">$ T $</formula> and payoff <formula id="12">$ H(T) = h(S(T)) $</formula>, then <formula id="13">$ u(T, S(T)) = h(S(T)) $</formula>, hence the terminal condition is <formula id="14">\[ u(T, z) = h(z). \]</formula> The lower and upper boundary conditions depend on the type of the option we wish to price. They can usually be derived from heuristic or arbitrage arguments.</para><para>For example, for a <bold>put option</bold> with expiry date <formula id="11">$ T $</formula> and strike price <formula id="15">$ K $</formula>, if <formula id="3">$ S(t) $</formula> is high, then the option is practically worthless since it is unlikely to be exercised. This means that we can consider a sufficiently large <formula id="16">$ z_u $</formula> and set: <formula id="17">\[ u(t, zu) = h^{put}_u(t) = 0. \]</formula> Also, if <formula id="3">$ S(t) $</formula> is close to zero, then we can assume that we are almost certain to exercise the put at expiry and obtain a payoff close to <formula id="15">$ K $</formula>. Considering a sufficiently small positive <formula id="18">$ z_l $</formula> we can therefore set: <formula id="19">\[ u(t, zl) = h^{put}_l(t) = exp(-r(T - t))K. \]</formula></para><para><simplesect kind="warning"><para>This code is also listed and fully explained in the book **Numerical Methods in Finance with C++** by Maciej Capiński and Tomasz Zastawniak, published in September 2012.</para></simplesect>
+<simplesect kind="author"><para>: Eduardo J. Sanchez (ejspeiro) - ejspeiro at gmail dot com </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BSEq_8h" kindref="compound">BSEq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" refkind="member"><highlight class="normal"><ref refid="classBSEq_1a3545b5fe078c573514666f07e3d516b2" kindref="member">BSEq::BSEq</ref>(<ref refid="classBSModel" kindref="compound">BSModel</ref>*<sp/>PtrModel_,<sp/><ref refid="classOption" kindref="compound">Option</ref>*<sp/>PtrOption_)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref><sp/>=<sp/>PtrModel_;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref><sp/>=<sp/>PtrOption_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classParabPDE_1accce3d4cc39e47137915a47b4edd838e" kindref="member">T</ref><sp/>=<sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1ae583dd6d430a3b428014efa942605d54" kindref="member">T</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classParabPDE_1aa75c941c87400c92781c74e1e4f5ae5e" kindref="member">xl</ref><sp/>=<sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1a37c65100e75876d4f4b76e8647c6702d" kindref="member">zl</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classParabPDE_1a5e4f6911cba231072c0ed4b6b4462b8a" kindref="member">xu</ref><sp/>=<sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1aa80c6f304df39def3df2bf26afbbfe79" kindref="member">zu</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1aac9b72618a86b764022bc2f8a0623b0c" kindref="member">BSEq::a</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-0.5*pow(<ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>-&gt;<ref refid="classBSModel_1a1267641043c16cd9baf2eb242320f0d3" kindref="member">sigma</ref>*z,<sp/>2.0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a7b0a00c216ae383f5a768c8efd42e672" kindref="member">BSEq::b</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>-&gt;<ref refid="classBSModel_1add3230c0df8e47623116b439598c0de3" kindref="member">r</ref>*z;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1aa63fc29fedf4ef53ace9499fab4d7aba" kindref="member">BSEq::c</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>-&gt;<ref refid="classBSModel_1add3230c0df8e47623116b439598c0de3" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classBSEq_1ae01526739bc51e813dfdb880585aefc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1ae01526739bc51e813dfdb880585aefc0" kindref="member">BSEq::d</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a6c81cef2ec102bc86bc8ff6378a2a519" kindref="member">BSEq::f</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1a10f2917f21055a1beb890353e53e0865" kindref="member">Payoff</ref>(z);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a5bde9ad3db5d94df77c78929de7f2717" kindref="member">BSEq::fl</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1afda338619f5646c0cb9e6cd5c83717f9" kindref="member">LowerBdCond</ref>(<ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>,<sp/>t);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classBSEq_1acebc22c41d04659861ef346d988de565" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1acebc22c41d04659861ef346d988de565" kindref="member">BSEq::fu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBSEq_1a280b15d8a4cd19d1aefc9feeb35a75bb" kindref="member">PtrOption</ref>-&gt;<ref refid="classOption_1a8f27761a53a9f0e7746b9358405a03f7" kindref="member">UpperBdCond</ref>(<ref refid="classBSEq_1a44b63f8349d8ab91a1fb8fc026cdf142" kindref="member">PtrModel</ref>,<sp/>t);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/esanchez/Dropbox/OptionPricing/BSEq.cpp"/>
+  </compounddef>
+</doxygen>

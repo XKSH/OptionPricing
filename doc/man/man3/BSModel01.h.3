@@ -1,0 +1,58 @@
+.TH "BSModel01.h" 3 "Wed May 4 2016" "Option Pricing Example" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BSModel01.h \- 
+.PP
+Definition of a class using the Box--Muller method for sample paths\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdlib>\fP
+.br
+\fC#include <ctime>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBSModel\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef vector< double > \fBSamplePath\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+We start by showing how to generate samples of random variables with standard normal distribution\&. In C++ we have at our disposal a function rand(), which generates integer numbers, simulating a sequence of i\&.i\&.d\&. random variables, uniformly distributed within the range from 0 to RAND_MAX\&. We can use the Box–Muller method to produce the following recipe for generating sample paths\&.
+.PP
+\fBWarning:\fP
+.RS 4
+This code is also listed and fully explained in the book **Numerical Methods in Finance with C++** by Maciej Capiński and Tomasz Zastawniak, published in September 2012\&.
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+: Eduardo J\&. Sanchez (ejspeiro) - ejspeiro at gmail dot com 
+.RE
+.PP
+
+.PP
+Definition in file \fBBSModel01\&.h\fP\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef vector<double> \fBSamplePath\fP"
+
+.PP
+Definition at line 29 of file BSModel01\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Option Pricing Example from the source code\&.

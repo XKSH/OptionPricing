@@ -1,0 +1,39 @@
+\hypertarget{Main24_8cpp_source}{\section{Main24.\+cpp}
+}
+
+\begin{DoxyCode}
+00001 
+00065 \textcolor{preprocessor}{#include <iostream>}
+00066 
+00067 \textcolor{preprocessor}{#include "\hyperlink{BSModel01_8h}{BSModel01.h}"}
+00068 \textcolor{preprocessor}{#include "\hyperlink{Options_8h}{Options.h}"}
+00069 \textcolor{preprocessor}{#include "\hyperlink{BSEq_8h}{BSEq.h}"}
+00070 \textcolor{preprocessor}{#include "\hyperlink{ExplicitMethod_8h}{ExplicitMethod.h}"}
+00071 
+\hypertarget{Main24_8cpp_source_l00072}{}\hyperlink{Main24_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00072} \textcolor{keywordtype}{int} \hyperlink{Main24_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}() \{
+00073 
+00074   \textcolor{keywordtype}{double} S0 = 100.0;
+00075   \textcolor{keywordtype}{double} r = 0.05;
+00076   \textcolor{keywordtype}{double} sigma = 0.2;
+00077 
+00078   \hyperlink{classBSModel}{BSModel} Model(S0, r, sigma);
+00079 
+00080   \textcolor{keywordtype}{double} K = 100.0;
+00081   \textcolor{keywordtype}{double} T = 1./12.;
+00082   \textcolor{keywordtype}{double} zl = 0.0;
+00083   \textcolor{keywordtype}{double} zu = 2.0*S0;
+00084 
+00085   \hyperlink{classPut}{Put} EuropeanPut(K, T, zl, zu);
+00086 
+00087   \hyperlink{classBSEq}{BSEq} BSPDE(&Model, &EuropeanPut);
+00088 
+00089   \textcolor{keywordtype}{int} imax = 3000;
+00090   \textcolor{keywordtype}{int} jmax = 1000;
+00091 
+00092   \hyperlink{classExplicitMethod}{ExplicitMethod} Method(&BSPDE, imax, jmax);
+00093 
+00094   Method.\hyperlink{classExplicitMethod_ac2c2d5bac3fc414851c2810ff916c2d6}{SolvePDE}( );
+00095 
+00096   cout << \textcolor{stringliteral}{"Price ="} << Method.\hyperlink{classFDMethod_a703b25f3d7f5083bfd9fbbe9e1906946}{v}(0.0, S0) << endl;
+00097 \}
+\end{DoxyCode}

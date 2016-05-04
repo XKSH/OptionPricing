@@ -1,0 +1,53 @@
+\hypertarget{BSEq_8cpp_source}{\section{B\+S\+Eq.\+cpp}
+}
+
+\begin{DoxyCode}
+00001 
+00050 \textcolor{preprocessor}{#include <cmath>}
+00051 
+00052 \textcolor{preprocessor}{#include "\hyperlink{BSEq_8h}{BSEq.h}"}
+00053 
+\hypertarget{BSEq_8cpp_source_l00054}{}\hyperlink{classBSEq_a3545b5fe078c573514666f07e3d516b2}{00054} \hyperlink{classBSEq_a3545b5fe078c573514666f07e3d516b2}{BSEq::BSEq}(\hyperlink{classBSModel}{BSModel}* PtrModel\_, \hyperlink{classOption}{Option}* PtrOption\_) \{
+00055 
+00056   \hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel} = PtrModel\_;
+00057   \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption} = PtrOption\_;
+00058   \hyperlink{classParabPDE_accce3d4cc39e47137915a47b4edd838e}{T} = \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_ae583dd6d430a3b428014efa942605d54}{T};
+00059   \hyperlink{classParabPDE_aa75c941c87400c92781c74e1e4f5ae5e}{xl} = \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_a37c65100e75876d4f4b76e8647c6702d}{zl};
+00060   \hyperlink{classParabPDE_a5e4f6911cba231072c0ed4b6b4462b8a}{xu} = \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_aa80c6f304df39def3df2bf26afbbfe79}{zu};
+00061 \}
+00062 
+\hypertarget{BSEq_8cpp_source_l00063}{}\hyperlink{classBSEq_aac9b72618a86b764022bc2f8a0623b0c}{00063} \textcolor{keywordtype}{double} \hyperlink{classBSEq_aac9b72618a86b764022bc2f8a0623b0c}{BSEq::a}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z) \{
+00064 
+00065   \textcolor{keywordflow}{return} -0.5*pow(\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel}->\hyperlink{classBSModel_a1267641043c16cd9baf2eb242320f0d3}{sigma}*z, 2.0);
+00066 \}
+00067 
+\hypertarget{BSEq_8cpp_source_l00068}{}\hyperlink{classBSEq_a7b0a00c216ae383f5a768c8efd42e672}{00068} \textcolor{keywordtype}{double} \hyperlink{classBSEq_a7b0a00c216ae383f5a768c8efd42e672}{BSEq::b}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z) \{
+00069 
+00070   \textcolor{keywordflow}{return} -\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel}->\hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{r}*z;
+00071 \}
+00072 
+\hypertarget{BSEq_8cpp_source_l00073}{}\hyperlink{classBSEq_aa63fc29fedf4ef53ace9499fab4d7aba}{00073} \textcolor{keywordtype}{double} \hyperlink{classBSEq_aa63fc29fedf4ef53ace9499fab4d7aba}{BSEq::c}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z) \{
+00074 
+00075   \textcolor{keywordflow}{return} \hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel}->\hyperlink{classBSModel_add3230c0df8e47623116b439598c0de3}{r};
+00076 \}
+00077 
+\hypertarget{BSEq_8cpp_source_l00078}{}\hyperlink{classBSEq_ae01526739bc51e813dfdb880585aefc0}{00078} \textcolor{keywordtype}{double} \hyperlink{classBSEq_ae01526739bc51e813dfdb880585aefc0}{BSEq::d}(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} z) \{
+00079 
+00080   \textcolor{keywordflow}{return} 0.0;
+00081 \}
+00082 
+\hypertarget{BSEq_8cpp_source_l00083}{}\hyperlink{classBSEq_a6c81cef2ec102bc86bc8ff6378a2a519}{00083} \textcolor{keywordtype}{double} \hyperlink{classBSEq_a6c81cef2ec102bc86bc8ff6378a2a519}{BSEq::f}(\textcolor{keywordtype}{double} z) \{
+00084 
+00085   \textcolor{keywordflow}{return} \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_a10f2917f21055a1beb890353e53e0865}{Payoff}(z);
+00086 \}
+00087 
+\hypertarget{BSEq_8cpp_source_l00088}{}\hyperlink{classBSEq_a5bde9ad3db5d94df77c78929de7f2717}{00088} \textcolor{keywordtype}{double} \hyperlink{classBSEq_a5bde9ad3db5d94df77c78929de7f2717}{BSEq::fl}(\textcolor{keywordtype}{double} t) \{
+00089 
+00090   \textcolor{keywordflow}{return} \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_afda338619f5646c0cb9e6cd5c83717f9}{LowerBdCond}(\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel}, t);
+00091 \}
+00092 
+\hypertarget{BSEq_8cpp_source_l00093}{}\hyperlink{classBSEq_acebc22c41d04659861ef346d988de565}{00093} \textcolor{keywordtype}{double} \hyperlink{classBSEq_acebc22c41d04659861ef346d988de565}{BSEq::fu}(\textcolor{keywordtype}{double} t) \{
+00094 
+00095   \textcolor{keywordflow}{return} \hyperlink{classBSEq_a280b15d8a4cd19d1aefc9feeb35a75bb}{PtrOption}->\hyperlink{classOption_a8f27761a53a9f0e7746b9358405a03f7}{UpperBdCond}(\hyperlink{classBSEq_a44b63f8349d8ab91a1fb8fc026cdf142}{PtrModel}, t);
+00096 \}
+\end{DoxyCode}

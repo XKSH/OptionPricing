@@ -1,0 +1,35 @@
+\form#0:\[ \frac{1}{2} \]
+\form#1:\[ \frac{\partial v(x,t)}{\partial t} = a(x,t)\frac{\partial^2 v(x,t)}{\partial x^2} + b(x,t)\frac{\partial v(x,t)}{\partial x} + c(x,t)v(x,t) + d(x,t). \]
+\form#2:$(t, x) \in [0, T]\times [xl, xu]$
+\form#3:$ S(t) $
+\form#4:$ t $
+\form#5:$ H(t) $
+\form#6:$ u $
+\form#7:\[ H(t) = u(t, S (t)). \]
+\form#8:$ C^{1,2} $
+\form#9:$ [0,T)\times \mathbb{R} $
+\form#10:$ u(t, S(t)) $
+\form#11:$ T $
+\form#12:$ H(T) = h(S(T)) $
+\form#13:$ u(T, S(T)) = h(S(T)) $
+\form#14:\[ u(T, z) = h(z). \]
+\form#15:$ K $
+\form#16:$ z_u $
+\form#17:\[ u(t, zu) = h^{put}_u(t) = 0. \]
+\form#18:$ z_l $
+\form#19:\[ u(t, zl) = h^{put}_l(t) = exp(-r(T - t))K. \]
+\form#20:$(t, x) \in [0, T]\times [x_l, x_u]$
+\form#21:$ xl, xu \in \mathbb{R} $
+\form#22:$ x_l < xu $
+\form#23:\[ v(T,x) = f(x), \]
+\form#24:\[ v(t,x_l) = f_l(t), \]
+\form#25:\[ v(t, x_u) = f_u(t), \]
+\form#26:$ f: [x_l, x_u] \mapsto \mathbb{R} $
+\form#27:$ f_l, f_u: [0, T] \mapsto \mathbb{R} $
+\form#28:$ f $
+\form#29:$ f_l $
+\form#30:$ f_u $
+\form#31:$ x_l, x_u \in \mathbb{R} $
+\form#32:$ f: [x_l, x_u] \longmapsto \mathbb{R} $
+\form#33:$ f_l, f_u: [0, T] \longmapsto \mathbb{R} $
+\form#34:$ x_l < x_u $

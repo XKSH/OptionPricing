@@ -1,0 +1,58 @@
+\hypertarget{FDMethod_8h_source}{\section{F\+D\+Method.\+h}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef FDMethod\_h}
+00002 \textcolor{preprocessor}{#define FDMethod\_h}
+00003 
+00004 \textcolor{preprocessor}{#include <vector>}
+00005 
+00006 \textcolor{preprocessor}{#include "\hyperlink{ParabPDE_8h}{ParabPDE.h}"}
+00007 
+00008 \textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+00009 
+\hypertarget{FDMethod_8h_source_l00010}{}\hyperlink{FDMethod_8h_a9a0795b74fd145527f628932c8884ffe}{00010} \textcolor{keyword}{typedef} vector<double> \hyperlink{FDMethod_8h_a9a0795b74fd145527f628932c8884ffe}{Vector};
+00011 
+\hypertarget{FDMethod_8h_source_l00012}{}\hyperlink{classFDMethod}{00012} \textcolor{keyword}{class }\hyperlink{classFDMethod}{FDMethod} \{
+00013   \textcolor{keyword}{public}:
+\hypertarget{FDMethod_8h_source_l00014}{}\hyperlink{classFDMethod_a900e2425569c70cf67c0b89fbeb15aba}{00014}     \hyperlink{classParabPDE}{ParabPDE}* \hyperlink{classFDMethod_a900e2425569c70cf67c0b89fbeb15aba}{PtrPDE};
+\hypertarget{FDMethod_8h_source_l00015}{}\hyperlink{classFDMethod_a72f22ed3e70c7f6084d3499fa7fbad38}{00015}     \textcolor{keywordtype}{int} \hyperlink{classFDMethod_a72f22ed3e70c7f6084d3499fa7fbad38}{imax};
+\hypertarget{FDMethod_8h_source_l00016}{}\hyperlink{classFDMethod_a6d4cec47464758c00c5d65cfa676d518}{00016}     \textcolor{keywordtype}{int} \hyperlink{classFDMethod_a6d4cec47464758c00c5d65cfa676d518}{jmax};
+\hypertarget{FDMethod_8h_source_l00017}{}\hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{00017}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_aec2698863360e900a8d84f7d672484c9}{dx};
+\hypertarget{FDMethod_8h_source_l00018}{}\hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{00018}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a4748bd052a59842154022b9aa6b55737}{dt};
+\hypertarget{FDMethod_8h_source_l00019}{}\hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{00019}     vector<Vector> \hyperlink{classFDMethod_a627ca1e8a18af23dbbe44a43cbc2831e}{V};
+00020 
+00021     \hyperlink{classFDMethod}{FDMethod}(\hyperlink{classParabPDE}{ParabPDE}* PtrPDE\_, \textcolor{keywordtype}{int} imax\_, \textcolor{keywordtype}{int} jmax\_);
+00022 
+\hypertarget{FDMethod_8h_source_l00023}{}\hyperlink{classFDMethod_a9aaf3e419045497b888808537fef2b19}{00023}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a9aaf3e419045497b888808537fef2b19}{t}(\textcolor{keywordtype}{double} i) \{
+00024       \textcolor{keywordflow}{return} dt*i;
+00025     \}
+\hypertarget{FDMethod_8h_source_l00026}{}\hyperlink{classFDMethod_a8e5c9b6b56eb6c9d00267a4028814314}{00026}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a8e5c9b6b56eb6c9d00267a4028814314}{x}(\textcolor{keywordtype}{int} j) \{
+00027       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_aa75c941c87400c92781c74e1e4f5ae5e}{xl} + dx*j;
+00028     \}
+\hypertarget{FDMethod_8h_source_l00029}{}\hyperlink{classFDMethod_a2b5d6d1d62048312725c60c5a99ee0d1}{00029}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a2b5d6d1d62048312725c60c5a99ee0d1}{a}(\textcolor{keywordtype}{double} i, \textcolor{keywordtype}{int} j) \{
+00030       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_a809e251d53ff62714bc8a30e45cc88a5}{a}(t(i), x(j));
+00031     \}
+\hypertarget{FDMethod_8h_source_l00032}{}\hyperlink{classFDMethod_a50c258eaca61c1ed34247ad827379668}{00032}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a50c258eaca61c1ed34247ad827379668}{b}(\textcolor{keywordtype}{double} i, \textcolor{keywordtype}{int} j) \{
+00033       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_ab98c81bf66471fa6f67dc17b9123bda6}{b}(t(i), x(j));
+00034     \}
+\hypertarget{FDMethod_8h_source_l00035}{}\hyperlink{classFDMethod_ad5c8725fb0379fa8cb29bb0954d60112}{00035}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_ad5c8725fb0379fa8cb29bb0954d60112}{c}(\textcolor{keywordtype}{double} i, \textcolor{keywordtype}{int} j) \{
+00036       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_aebec9339309e456136ecd0c3b4a74bb0}{c}(t(i), x(j));
+00037     \}
+\hypertarget{FDMethod_8h_source_l00038}{}\hyperlink{classFDMethod_a4ad2213e6338bdfc2cc8a2b4e7eb0952}{00038}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a4ad2213e6338bdfc2cc8a2b4e7eb0952}{d}(\textcolor{keywordtype}{double} i, \textcolor{keywordtype}{int} j) \{
+00039       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_a13531e677a97660f56f88fc8a9f2c593}{d}(t(i), x(j));
+00040     \}
+\hypertarget{FDMethod_8h_source_l00041}{}\hyperlink{classFDMethod_a02f9d3f5c3466f04323bb966b346efae}{00041}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_a02f9d3f5c3466f04323bb966b346efae}{f} (\textcolor{keywordtype}{int} j) \{
+00042       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_a099b6ba266fb033de9901a60dc935ddf}{f}(x(j));
+00043     \}
+\hypertarget{FDMethod_8h_source_l00044}{}\hyperlink{classFDMethod_ae282bd4b389fdce1badb5ecaa3c3e8e5}{00044}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_ae282bd4b389fdce1badb5ecaa3c3e8e5}{fu}(\textcolor{keywordtype}{int} i) \{
+00045       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_a8a1850597550bf8aab3b5dca2aed6ff8}{fu}(t(i));
+00046     \}
+\hypertarget{FDMethod_8h_source_l00047}{}\hyperlink{classFDMethod_add9102baa92871331350bf5d86c12f1a}{00047}     \textcolor{keywordtype}{double} \hyperlink{classFDMethod_add9102baa92871331350bf5d86c12f1a}{fl}(\textcolor{keywordtype}{int} i) \{
+00048       \textcolor{keywordflow}{return} PtrPDE->\hyperlink{classParabPDE_aa083d2745f44daba57ad296749eb7ec0}{fl}(t(i));
+00049     \}
+00050     \textcolor{keywordtype}{double} v(\textcolor{keywordtype}{double} t, \textcolor{keywordtype}{double} x);
+00051 \};
+00052 
+00053 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

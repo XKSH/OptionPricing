@@ -1,0 +1,38 @@
+\hypertarget{Options_8h_source}{\section{Options.\+h}
+}
+
+\begin{DoxyCode}
+00001 
+00018 \textcolor{preprocessor}{#ifndef Option\_h}
+00019 \textcolor{preprocessor}{#define Option\_h}
+00020 
+00021 \textcolor{preprocessor}{#include "\hyperlink{BSModel01_8h}{BSModel01.h}"}
+00022 
+\hypertarget{Options_8h_source_l00023}{}\hyperlink{classOption}{00023} \textcolor{keyword}{class }\hyperlink{classOption}{Option} \{
+00024   \textcolor{keyword}{public}:
+\hypertarget{Options_8h_source_l00025}{}\hyperlink{classOption_ae583dd6d430a3b428014efa942605d54}{00025}     \textcolor{keywordtype}{double} \hyperlink{classOption_ae583dd6d430a3b428014efa942605d54}{T};
+\hypertarget{Options_8h_source_l00026}{}\hyperlink{classOption_a37c65100e75876d4f4b76e8647c6702d}{00026}     \textcolor{keywordtype}{double} \hyperlink{classOption_a37c65100e75876d4f4b76e8647c6702d}{zl};
+\hypertarget{Options_8h_source_l00027}{}\hyperlink{classOption_aa80c6f304df39def3df2bf26afbbfe79}{00027}     \textcolor{keywordtype}{double} \hyperlink{classOption_aa80c6f304df39def3df2bf26afbbfe79}{zu};
+00028 
+00029     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classOption_a10f2917f21055a1beb890353e53e0865}{Payoff}(\textcolor{keywordtype}{double} z) = 0;
+00030     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classOption_a8f27761a53a9f0e7746b9358405a03f7}{UpperBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t) = 0;
+00031     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{classOption_afda338619f5646c0cb9e6cd5c83717f9}{LowerBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t) = 0;
+00032 \};
+00033 
+\hypertarget{Options_8h_source_l00034}{}\hyperlink{classPut}{00034} \textcolor{keyword}{class }\hyperlink{classPut}{Put}: \textcolor{keyword}{public} \hyperlink{classOption}{Option} \{
+00035   \textcolor{keyword}{public}:
+\hypertarget{Options_8h_source_l00036}{}\hyperlink{classPut_aa8d5c1c7465fd311ddaf33533038f959}{00036}     \textcolor{keywordtype}{double} \hyperlink{classPut_aa8d5c1c7465fd311ddaf33533038f959}{K};
+00037 
+\hypertarget{Options_8h_source_l00038}{}\hyperlink{classPut_a8a846b5650bb0d677c251a114c8d32e0}{00038}     \hyperlink{classPut_a8a846b5650bb0d677c251a114c8d32e0}{Put}(\textcolor{keywordtype}{double} K\_, \textcolor{keywordtype}{double} T\_, \textcolor{keywordtype}{double} zl\_, \textcolor{keywordtype}{double} zu\_) \{
+00039       K = K\_;
+00040       \hyperlink{classOption_ae583dd6d430a3b428014efa942605d54}{T} = T\_;
+00041       \hyperlink{classOption_a37c65100e75876d4f4b76e8647c6702d}{zl} = zl\_;
+00042       \hyperlink{classOption_aa80c6f304df39def3df2bf26afbbfe79}{zu} = zu\_;
+00043     \}
+00044     \textcolor{keywordtype}{double} \hyperlink{classPut_ae2bbadeb2c9f05644ef9b9af97ad7520}{Payoff}(\textcolor{keywordtype}{double} z);
+00045     \textcolor{keywordtype}{double} \hyperlink{classPut_ac15aea264781b4f426b68918ab73a27d}{UpperBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t);
+00046     \textcolor{keywordtype}{double} \hyperlink{classPut_ab07d0f1d939f267861484f645d71c9c5}{LowerBdCond}(\hyperlink{classBSModel}{BSModel}* PtrModel, \textcolor{keywordtype}{double} t);
+00047 \};
+00048 
+00049 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}
